@@ -1,12 +1,3 @@
-# WorldsBestRssAndFBParser::Feed.execute "http://abcnews.go.com/abcnews/topstories"
-# WorldsBestRssAndFBParser::Feed.execute "https://www.facebook.com/leagueoflegends/"
-
-#FACEBOOK_APPID="458198461180322"
-#FACEBOOK_SECRET="f256365f32d5cea44316ecfcda203d99"    
-
-#facebook_appid="458198461180322"
-#facebook_secret="f256365f32d5cea44316ecfcda203d99"    
-
 require 'feedjira'
 require 'koala'
 require 'uri'
