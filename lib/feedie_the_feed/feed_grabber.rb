@@ -16,7 +16,7 @@ module FeedieTheFeed
     
     def get(url, facebook_appid=nil, facebook_secret=nil)
       set_facebook_credentials(facebook_appid, facebook_secret) if facebook_appid && facebook_secret
-      validate_url_and_start(url)
+      get_proper_feed(url)
     end
 
     def reset_keys
@@ -26,18 +26,10 @@ module FeedieTheFeed
 
 
     private
-        
+    
     def set_facebook_credentials(facebook_appid, facebook_secret)
       @facebook_appid = facebook_appid
       @facebook_secret = facebook_secret
-    end
-    
-    def validate_url_and_start(url)
-      if url =~ /\A#{URI::regexp(['http', 'https'])}\z/
-        get_proper_feed(url)
-      else
-        p "Bad url." #GOTA THROW EXCEPTION
-      end      
     end
     
     def get_proper_feed(url)
@@ -45,8 +37,12 @@ module FeedieTheFeed
     end
     
     def is_facebook_url?(url)
-      uri = URI.parse(url)
-      PublicSuffix.parse(uri.host).domain == 'facebook.com'
+      begin
+        uri = URI.parse(url)
+        PublicSuffix.parse(uri.host).domain == 'facebook.com'
+      rescue PublicSuffix::DomainInvalid
+        raise "The url provided doesn't seem to be valid"
+      end
     end
     
     def get_facebook_feed(url)
