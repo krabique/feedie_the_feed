@@ -19,6 +19,12 @@ module FeedieTheFeed
       validate_url_and_start(url)
     end
 
+    def reset_keys
+      @facebook_appid = nil
+      @facebook_secret = nil
+    end
+
+
     private
         
     def set_facebook_credentials(facebook_appid, facebook_secret)
