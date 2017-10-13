@@ -21,7 +21,7 @@ module FeedieTheFeed
       get_proper_feed(url)
     end
 
-    def reset_keys
+    def reset_keys!
       @facebook_appid = nil
       @facebook_secret = nil
     end
