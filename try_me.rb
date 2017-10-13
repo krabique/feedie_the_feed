@@ -16,7 +16,6 @@ links_fb =  ['https://www.facebook.com/PokerGP',
              'https://www.facebook.com/Defense0fTheAncients/']
 
 links_rss = ['http://abcnews.go.com/abcnews/topstories',
-             'https://www.bsuir.by/rss?rubid=102243&resid=100229',
              'http://rss.cnn.com/rss/edition_world.rss',
              'http://feeds.bbci.co.uk/news/world/rss.xml']
 
