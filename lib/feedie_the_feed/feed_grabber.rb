@@ -4,6 +4,7 @@ require 'uri'
 require 'public_suffix'
 
 module FeedieTheFeed
+  # This is the main class that does all the job.
   class FeedGrabber
     # Stops feedjira spamming in console when there is no last modified time
     # field in an rss feed
@@ -63,7 +64,9 @@ module FeedieTheFeed
     end
 
     def get_fb_page_name(url)
-      URI.parse(url).path.match(%r{\A/([^/]*)})[1]
+      URI.parse(url).path.match(
+        %r{\A/([^/]*)}
+      )[1]
     end
 
     def truncate(text, options = {})
@@ -71,15 +74,7 @@ module FeedieTheFeed
 
       omission = options[:omission] || '...'
       length_with_room_for_omission = options[:length] - omission.length
-      stop = \
-        if options[:separator]
-          text.rindex(options[:separator], length_with_room_for_omission) ||
-            length_with_room_for_omission
-        else
-          length_with_room_for_omission
-        end
-
-      "#{text[0, stop]}#{omission}"
+      "#{text[0, length_with_room_for_omission]}#{omission}"
     end
 
     def formalize_fb_feed_array(array)
