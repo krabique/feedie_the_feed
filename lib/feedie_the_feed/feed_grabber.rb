@@ -74,6 +74,7 @@ module FeedieTheFeed
 
       omission = options[:omission] || '...'
       length_with_room_for_omission = options[:length] - omission.length
+
       "#{text[0, length_with_room_for_omission]}#{omission}"
     end
 
