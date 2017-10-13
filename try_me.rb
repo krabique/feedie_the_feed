@@ -2,9 +2,9 @@ require 'feedie_the_feed'
 
 @feed_grabber = FeedieTheFeed::FeedGrabber.new
 
-## Uncomment and change these accordingly if you want to provide the keys here,
-## instead of using those from environment variables FACEBOOK_APPID and
-## FACEBOOK_SECRET
+# # Uncomment and change these accordingly if you want to provide the keys here,
+# # instead of using those from environment variables FACEBOOK_APPID and
+# # FACEBOOK_SECRET
 # facebook_appid = "123"
 # facebook_secret = "123"
 # @feed_grabber = FeedieTheFeed::FeedGrabber.new(
@@ -22,12 +22,12 @@ links_rss = ['http://abcnews.go.com/abcnews/topstories',
 def get_feed(links)
   links.each do |link|
     f = @feed_grabber.get(link)
-    p 'entry_id: ' + f.first['entry_id']
-    p 'title: ' + f.first['title']
-    p 'summary: ' + f.first['summary']
-    p 'url: ' + f.first['url']
+    p 'entry_id: '  + f.first['entry_id']
+    p 'title: '     + f.first['title']
+    p 'summary: '   + f.first['summary']
+    p 'url: '       + f.first['url']
     p 'published: ' + f.first['published'].to_s
-    p 'image: ' + f.first['image'] if f.first['image']
+    p 'image: '     + f.first['image'] if f.first['image']
     p '----------------------------------'
   end
 end
