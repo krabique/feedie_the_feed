@@ -3,6 +3,8 @@ require 'koala'
 require 'uri'
 require 'public_suffix'
 
+require 'feedie_the_feed/helper_extensions/string'
+
 module FeedieTheFeed
   # This is the main class that does all the job.
   class FeedGrabber
@@ -69,21 +71,11 @@ module FeedieTheFeed
       )[1]
     end
 
-    def truncate(text, options = {})
-      return text unless text.length > options[:length]
-
-      omission = options[:omission] || '...'
-      length_with_room_for_omission = options[:length] - omission.length
-
-      "#{text[0, length_with_room_for_omission]}#{omission}"
-    end
-
     def formalize_fb_feed_array(array)
       array.each do |hash|
         hash['entry_id'] = hash.delete 'id'
         hash['summary'] = hash.delete 'message'
-        hash['title'] = truncate(hash['summary'], length: 80, separator: ' ') if
-          hash['summary']
+        hash['title'] = hash['summary'].truncate(80) if hash['summary']
         hash['url'] = hash.delete 'link'
         hash['published'] = Time.parse hash.delete('created_time')
         hash['image'] = hash.delete 'picture'
