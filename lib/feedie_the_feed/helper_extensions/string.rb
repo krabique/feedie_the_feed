@@ -5,6 +5,7 @@ class String
   # sure it won't cut in the middle of a word, just on a space.
   #
   # The original RoR truncate method can be found here: goo.gl/unjyZm
+  # Copyright (c) 2005-2017 David Heinemeier Hansson
   # MIT licence: https://github.com/rails/rails/blob/master/MIT-LICENSE
   # (pls, don't sue me)
   def truncate(truncate_at)
