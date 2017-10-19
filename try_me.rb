@@ -19,12 +19,19 @@ links_rss = ['http://abcnews.go.com/abcnews/topstories',
              'http://rss.cnn.com/rss/edition_world.rss',
              'http://feeds.bbci.co.uk/news/world/rss.xml']
 
+@facebook_appid = nil
+@facebook_secret = nil
+@facebook_posts_limit = nil
+
 def get_feed(links)
   links.each do |link|
-    f = @feed_grabber.get(link)
+    f = @feed_grabber.get(link,
+                          facebook_posts_limit: @facebook_posts_limit,
+                          facebook_appid: @facebook_appid,
+                          facebook_secret: @facebook_secret)
     p 'entry_id: '  + f.first['entry_id']
-    p 'title: '     + f.first['title']
-    p 'summary: '   + f.first['summary']
+    p 'title: '     + f.first['title'] if f.first['title']
+    p 'summary: '   + f.first['summary'] if f.first['summary']
     p 'url: '       + f.first['url']
     p 'published: ' + f.first['published'].to_s
     p 'image: '     + f.first['image'] if f.first['image']
