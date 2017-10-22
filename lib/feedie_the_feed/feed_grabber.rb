@@ -26,6 +26,8 @@ module FeedieTheFeed
     #   globally in this object
     # @param facebook_posts_limit [Integer] The amount of Facebook posts to get
     #   by default (should be in 1..100)
+    # @raise [BadFacebookPostsLimit] Exception used when Facebook posts limit is
+    #   out of range or not an integer
     def initialize(facebook_appid = nil, facebook_secret = nil,
                    facebook_posts_limit = @@defaults[:facebook_posts_limit])
       @facebook_appid_global = facebook_appid
