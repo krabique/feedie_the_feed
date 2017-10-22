@@ -91,14 +91,14 @@ module FeedieTheFeed
       facebook_appid ||= ENV['FACEBOOK_APPID']
       facebook_secret ||= ENV['FACEBOOK_SECRET']
       oauth = Koala::Facebook::OAuth.new(facebook_appid, facebook_secret)
-      
+
       begin
         access_token = oauth.get_app_access_token
       rescue Koala::Facebook::OAuthTokenRequestError => e
         raise FacebookAuthorisation.new('Failing to authorise with given ' \
           'facebook_appid and facebook_secret.', e)
       end
-      
+
       @fb_graph_api = Koala::Facebook::API.new(access_token)
     end
 

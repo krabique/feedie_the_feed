@@ -6,10 +6,10 @@ module FeedieTheFeed
   class Error < StandardError
     include Nesty::NestedError
   end
-  
+
   # Exception used when Facebook authorisation fails with given credentials
   class FacebookAuthorisation < Error; end
-  
+
   # Exception used when the RSS or Facebook link provided isn't a valid one
   class BadUrl < Error; end
 end
