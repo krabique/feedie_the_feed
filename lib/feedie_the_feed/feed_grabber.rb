@@ -5,6 +5,8 @@ require 'public_suffix'
 
 require 'feedie_the_feed/helper_extensions/string'
 
+require 'feedie_the_feed/exceptions'
+
 module FeedieTheFeed
   # This is the main class that does all the job.
   class FeedGrabber
@@ -62,8 +64,8 @@ module FeedieTheFeed
     def facebook_url?(url)
       uri = URI.parse(url)
       PublicSuffix.parse(uri.host).domain == 'facebook.com'
-    rescue PublicSuffix::DomainInvalid
-      raise "The url provided doesn't seem to be valid"
+    rescue PublicSuffix::DomainInvalid => e
+      raise BadUrl.new("The url provided doesn't seem to be valid", e)
     end
 
     def get_facebook_feed(url,
@@ -73,7 +75,7 @@ module FeedieTheFeed
                           facebook_posts_limit, #                        |
                           facebook_appid = @facebook_appid_global, #     |
                           facebook_secret = @facebook_secret_global) #   |
-      authorize_facebook(facebook_appid, facebook_secret) #             /
+      authorise_facebook(facebook_appid, facebook_secret) #             /
       # may the gods forgive me                                        /
       facebook_posts_limit ||= @@defaults[:facebook_posts_limit] # <--/
       posts = @fb_graph_api.get_connection(
@@ -85,11 +87,18 @@ module FeedieTheFeed
       formalize_fb_feed_array(posts.to_a)
     end
 
-    def authorize_facebook(facebook_appid, facebook_secret)
+    def authorise_facebook(facebook_appid, facebook_secret)
       facebook_appid ||= ENV['FACEBOOK_APPID']
       facebook_secret ||= ENV['FACEBOOK_SECRET']
       oauth = Koala::Facebook::OAuth.new(facebook_appid, facebook_secret)
-      access_token = oauth.get_app_access_token
+      
+      begin
+        access_token = oauth.get_app_access_token
+      rescue Koala::Facebook::OAuthTokenRequestError => e
+        raise FacebookAuthorisation.new('Failing to authorise with given ' \
+          'facebook_appid and facebook_secret.', e)
+      end
+      
       @fb_graph_api = Koala::Facebook::API.new(access_token)
     end
 

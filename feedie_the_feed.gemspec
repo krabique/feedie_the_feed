@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'feedjira',      '~> 2.1.2'
   s.add_dependency 'koala',         '~> 3.0.0'
   s.add_dependency 'public_suffix', '~> 3.0.0'
+  s.add_dependency 'nesty',         '~> 1.0.2'
 
   # s.add_development_dependency 'bundler', '~> 1.0'
 end
