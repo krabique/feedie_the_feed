@@ -11,7 +11,8 @@ module FeedieTheFeed
       feed = Feedjira::Feed.fetch_and_parse(url)
       feed.entries.map!(&:to_h)
     rescue Feedjira::NoParserAvailable => e
-      raise BadUrl.new("The url provided doesn't seem to contain any feed.", e)
+      raise BadUrl.new("The url provided doesn't seem to contain any feed. " \
+        "(url: #{url})", e)
     end
   end
 end

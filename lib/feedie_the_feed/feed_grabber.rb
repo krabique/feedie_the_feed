@@ -109,7 +109,8 @@ module FeedieTheFeed
       uri = URI.parse(url)
       PublicSuffix.parse(uri.host).domain == 'facebook.com'
     rescue PublicSuffix::DomainInvalid => e
-      raise BadUrl.new("The url provided doesn't seem to be valid", e)
+      raise BadUrl.new("The url provided doesn't seem to be valid. " \
+        "(url: #{url})", e)
     end
   end
 end
