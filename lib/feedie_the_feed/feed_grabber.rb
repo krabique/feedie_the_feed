@@ -20,7 +20,7 @@ module FeedieTheFeed
                    facebook_posts_limit = @@defaults[:facebook_posts_limit])
       @facebook_appid_global = facebook_appid
       @facebook_secret_global = facebook_secret
-      @facebook_posts_limit_global = facebook_posts_limit
+      fb_posts_limit(facebook_posts_limit)
     end
 
     def get(url, options = {})
@@ -40,8 +40,10 @@ module FeedieTheFeed
     end
 
     def fb_posts_limit(limit)
-      raise 'Facebook posts limit can only be an integer from 1 to 100' unless
-        limit.is_a?(Integer) && limit < 100 && limit > 0
+      unless limit.is_a?(Integer) && limit <= 100 && limit > 0
+        raise BadFacebookPostsLimit, 'Facebook posts limit can only be an ' \
+          'integer from 1 to 100'
+      end
       @facebook_posts_limit_global = limit
     end
 

@@ -12,4 +12,7 @@ module FeedieTheFeed
 
   # Exception used when the RSS or Facebook link provided isn't a valid one
   class BadUrl < Error; end
+
+  # Exception used when Facebook posts limit is out of range or not an integer
+  class BadFacebookPostsLimit < Error; end
 end
