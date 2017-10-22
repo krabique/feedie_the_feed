@@ -113,15 +113,11 @@ module FeedieTheFeed
     end
 
     def get_facebook_feed(url,
-                          # for some unknown reason this shit won't default to
-                          # @@defaults[:facebook_posts_limit], and keeps using
-                          # nil instead, so a workaround is this line -->
-                          facebook_posts_limit, #                        |
-                          facebook_appid = @facebook_appid_global, #     |
-                          facebook_secret = @facebook_secret_global) #   |
-      authorise_facebook(facebook_appid, facebook_secret) #             /
-      # may the gods forgive me                                        /
-      facebook_posts_limit ||= @@defaults[:facebook_posts_limit] # <--/
+                          facebook_posts_limit,
+                          facebook_appid = @facebook_appid_global,
+                          facebook_secret = @facebook_secret_global)
+      authorise_facebook(facebook_appid, facebook_secret)
+      facebook_posts_limit ||= @@defaults[:facebook_posts_limit]
       posts = @fb_graph_api.get_connection(
         get_fb_page_name(url),
         'posts',
