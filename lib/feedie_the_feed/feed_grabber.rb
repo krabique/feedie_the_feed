@@ -110,17 +110,17 @@ module FeedieTheFeed
 
     def formalize_fb_feed_array(array)
       array.each do |hash|
-        hash['entry_id'] = hash.delete 'id'
-        hash['summary'] = hash.delete 'message'
+        hash['entry_id'] = hash.delete('id')
+        hash['summary'] = hash.delete('message')
         hash['title'] = hash['summary'].truncate(80) if hash['summary']
-        hash['url'] = hash.delete 'link'
-        hash['published'] = Time.parse hash.delete('created_time')
-        hash['image'] = hash.delete 'picture'
+        hash['url'] = hash.delete('link')
+        hash['published'] = Time.parse(hash.delete('created_time'))
+        hash['image'] = hash.delete('picture')
       end
     end
 
     def get_rss_feed(url)
-      feed = Feedjira::Feed.fetch_and_parse url
+      feed = Feedjira::Feed.fetch_and_parse(url)
       feed.entries.map!(&:to_h)
     rescue Feedjira::NoParserAvailable => e
       raise BadUrl.new("The url provided doesn't seem to contain any feed.", e)
