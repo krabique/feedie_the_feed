@@ -53,6 +53,7 @@ module FeedieTheFeed
                         facebook_posts_limit,
                         facebook_appid,
                         facebook_secret)
+
       if facebook_url?(url)
         get_facebook_feed(url,
                           facebook_posts_limit,
@@ -61,6 +62,8 @@ module FeedieTheFeed
       else
         get_rss_feed(url)
       end
+    rescue Faraday::ConnectionFailed => e
+      raise ConnectionFailed, e
     end
 
     def facebook_url?(url)

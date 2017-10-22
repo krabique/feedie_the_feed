@@ -15,4 +15,7 @@ module FeedieTheFeed
 
   # Exception used when Facebook posts limit is out of range or not an integer
   class BadFacebookPostsLimit < Error; end
+
+  # Exception used when TCP connection could not be established
+  class ConnectionFailed < Error; end
 end
