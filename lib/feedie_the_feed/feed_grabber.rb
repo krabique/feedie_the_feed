@@ -95,7 +95,7 @@ module FeedieTheFeed
       begin
         access_token = oauth.get_app_access_token
       rescue Koala::Facebook::OAuthTokenRequestError => e
-        raise FacebookAuthorisation.new('Failing to authorise with given ' \
+        raise FacebookAuthorisationError.new('Failing to authorise with given ' \
           'facebook_appid and facebook_secret.', e)
       end
 
