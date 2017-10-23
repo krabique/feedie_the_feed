@@ -92,7 +92,8 @@ module FeedieTheFeed
                         facebook_posts_limit,
                         facebook_appid,
                         facebook_secret)
-
+      facebook_appid ||= @facebook_appid_global
+      facebook_secret ||= @facebook_secret_global
       if facebook_url?(url)
         get_facebook_feed(url,
                           facebook_posts_limit,

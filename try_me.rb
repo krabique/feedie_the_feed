@@ -2,15 +2,6 @@ require 'feedie_the_feed'
 
 @feed_grabber = FeedieTheFeed::FeedGrabber.new
 
-# # Uncomment and change these accordingly if you want to provide the keys here,
-# # instead of using those from environment variables FACEBOOK_APPID and
-# # FACEBOOK_SECRET
-# facebook_appid = "123"
-# facebook_secret = "123"
-# @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-#   facebook_appid, facebook_secret
-# )
-
 links_fb =  ['https://www.facebook.com/PokerGP',
              'https://www.facebook.com/leagueoflegends/',
              'https://www.facebook.com/Defense0fTheAncients/']
@@ -38,6 +29,29 @@ def get_feed(links)
     p '----------------------------------'
   end
 end
+
+# # Uncomment and change these accordingly if you want to provide the keys here,
+# # instead of using those from environment variables FACEBOOK_APPID and
+# # FACEBOOK_SECRET
+# facebook_appid = "123"
+# facebook_secret = "123"
+# facebook_posts_limit = 10
+# @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+#   facebook_appid, facebook_secret, facebook_posts_limit
+# )
+# 
+# def get_feed(links)
+#   links.each do |link|
+#     f = @feed_grabber.get(link)
+#     p 'entry_id: '  + f.first['entry_id']
+#     p 'title: '     + f.first['title'] if f.first['title']
+#     p 'summary: '   + f.first['summary'] if f.first['summary']
+#     p 'url: '       + f.first['url']
+#     p 'published: ' + f.first['published'].to_s
+#     p 'image: '     + f.first['image'] if f.first['image']
+#     p '----------------------------------'
+#   end
+# end
 
 p ' -------- HERE GOOOOOOOOOOOOES ----- FACEBOOK --'
 get_feed links_fb

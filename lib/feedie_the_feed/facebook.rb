@@ -15,8 +15,8 @@ module FeedieTheFeed
 
     def get_facebook_feed(url,
                           facebook_posts_limit,
-                          facebook_appid = @facebook_appid_global,
-                          facebook_secret = @facebook_secret_global)
+                          facebook_appid,
+                          facebook_secret)
       authorise_facebook(facebook_appid, facebook_secret)
       facebook_posts_limit ||= @@defaults[:facebook_posts_limit]
       posts = @fb_graph_api.get_connection(
@@ -37,7 +37,7 @@ module FeedieTheFeed
         access_token = oauth.get_app_access_token
       rescue Koala::Facebook::OAuthTokenRequestError => e
         raise FacebookAuthorisationError.new('Failing to authorise with ' \
-          'given facebook_appid and facebook_secret.', e)
+          'given Facebook appid and Facebook secret key.', e)
       end
 
       @fb_graph_api = Koala::Facebook::API.new(access_token)
