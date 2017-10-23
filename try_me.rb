@@ -10,6 +10,8 @@ links_rss = ['http://abcnews.go.com/abcnews/topstories',
              'http://rss.cnn.com/rss/edition_world.rss',
              'http://feeds.bbci.co.uk/news/world/rss.xml']
 
+# Will use FACEBOOK_APPID and FACEBOOK_SECRET environment variables, if those
+# are nil
 @facebook_appid = nil
 @facebook_secret = nil
 @facebook_posts_limit = nil
