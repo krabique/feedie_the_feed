@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.name    = 'feedie_the_feed'
   s.version = FeedieTheFeed::VERSION
 
-  s.required_ruby_version = '>= 2.4.2'
+  s.required_ruby_version = '>= 2.2'
 
   s.authors = ['Jerry Wisdom']
   s.email = ['krabique48@gmail.com']
@@ -17,10 +17,8 @@ Gem::Specification.new do |s|
   s.files = Dir.glob('lib/**/*') + %w[LICENSE README.md]
   s.require_path = 'lib'
 
-  s.add_dependency 'feedjira',      '~> 2.1.2'
-  s.add_dependency 'koala',         '~> 3.0.0'
-  s.add_dependency 'public_suffix', '~> 3.0.0'
-  s.add_dependency 'nesty',         '~> 1.0.2'
-
-  # s.add_development_dependency 'bundler', '~> 1.0'
+  s.add_dependency 'feedjira',      '~> 2.1'
+  s.add_dependency 'koala',         '~> 3.0'
+  s.add_dependency 'public_suffix', '~> 3.0'
+  s.add_dependency 'nesty',         '~> 1.0'
 end
