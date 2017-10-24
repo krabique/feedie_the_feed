@@ -92,21 +92,87 @@ describe FeedieTheFeed::FeedGrabber do
         facebook_appid: '123',
         facebook_secret: '123'
       )
-      expect {
+      expect do
         @feed_grabber.get('https://www.facebook.com/PokerGP')
-      }.to raise_error(FeedieTheFeed::FacebookAuthorisationError)
-      
+      end.to raise_error(FeedieTheFeed::FacebookAuthorisationError)
+
       @feed_grabber = FeedieTheFeed::FeedGrabber.new
-      expect {
+      expect do
         @feed_grabber.get('https://www.facebook.com/PokerGP',
-          facebook_appid: '123',
-          facebook_secret: '123'
-        )
-      }.to raise_error(FeedieTheFeed::FacebookAuthorisationError)      
+                          facebook_appid: '123',
+                          facebook_secret: '123')
+      end.to raise_error(FeedieTheFeed::FacebookAuthorisationError)
     end
-    
+
     it 'exception BadUrl'
-    it 'exception BadFacebookPostsLimit'
+
+    it 'should raise FeedieTheFeed::BadFacebookPostsLimit exception when ' \
+      'calling fb_posts_limit(limit) instance method with a non integer ' \
+      'limit value or a value ' \
+      'that is not in range of 1 to 100 as the Facebook posts limit' do
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      expect do
+        limit_value = 0
+        @feed_grabber.fb_posts_limit(limit_value)
+      end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
+
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      expect do
+        limit_value = -1
+        @feed_grabber.fb_posts_limit(limit_value)
+      end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
+
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      expect do
+        limit_value = 101
+        @feed_grabber.fb_posts_limit(limit_value)
+      end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
+    end
+
+    it 'should raise FeedieTheFeed::BadFacebookPostsLimit exception when ' \
+      'creating a new instance of FeedGrabber class with a non integer ' \
+      'limit value or a value ' \
+      'that is not in range of 1 to 100 as the Facebook posts limit' do
+      expect do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new(facebook_posts_limit: 0)
+      end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
+      expect do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new(facebook_posts_limit: -1)
+      end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
+      expect do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+          facebook_posts_limit: -100
+        )
+      end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
+    end
+
+    it 'should raise FeedieTheFeed::BadFacebookPostsLimit exception when ' \
+      'calling the get instance method with a non integer ' \
+      'limit value or a value ' \
+      'that is not in range of 1 to 100 as the Facebook posts limit' do
+      facebook_page = 'https://www.facebook.com/PokerGP'
+      expect do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new
+        @feed_grabber.get(facebook_page, facebook_posts_limit: 0)
+      end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
+
+      expect do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new
+        @feed_grabber.get(
+          facebook_page,
+          facebook_posts_limit: -1
+        )
+      end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
+
+      expect do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new
+        @feed_grabber.get(
+          facebook_page,
+          facebook_posts_limit: 101
+        )
+      end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
+    end
+
     it 'exception ConnectionFailed'
   end
 end
