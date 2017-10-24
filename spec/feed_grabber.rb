@@ -15,7 +15,43 @@ describe FeedieTheFeed::FeedGrabber do
     end
 
     it '#get'
-    it '#initialize'
+    
+    it 'should create new FeedGrabber class instance with the correct ' \
+      'provided values for @facebook_appid_global, @facebook_secret_global ' \
+      'and @facebook_posts_limit_global' do
+      facebook_appid = 'abc123'
+      facebook_secret = 'abc123'
+      facebook_posts_limit = 33
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+        facebook_appid: facebook_appid,
+        facebook_secret: facebook_secret,
+        facebook_posts_limit: facebook_posts_limit
+      )
+      expect(@feed_grabber.instance_variable_get(:@facebook_appid_global)).
+        to eq facebook_appid
+      expect(@feed_grabber.instance_variable_get(:@facebook_secret_global)).
+        to eq facebook_secret
+      expect(
+        @feed_grabber.instance_variable_get(:@facebook_posts_limit_global)
+      ).to eq facebook_posts_limit
+    end
+    
+    it 'should create new FeedGrabber class instance with nil ' \
+      'values for @facebook_appid_global, @facebook_secret_global, ' \
+      'and default value for @facebook_posts_limit_global from ' \
+      '@defaults[:facebook_posts_limit] ' do
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      expect(@feed_grabber.instance_variable_get(:@facebook_appid_global)).
+        to eq nil
+      expect(@feed_grabber.instance_variable_get(:@facebook_secret_global)).
+        to eq nil
+      expect(
+        @feed_grabber.instance_variable_get(:@facebook_posts_limit_global)
+      ).to eq(
+        @feed_grabber.instance_variable_get(:@defaults)[:facebook_posts_limit]
+      )
+    end
+      
     it 'should reset @facebook_posts_limit_global variable to a default ' \
       'value given in @defaults hash when we call ' \
       'the reset_fb_posts_limit! method' do
