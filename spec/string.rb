@@ -11,8 +11,10 @@ describe String do
 
       # This method is used to validate the behaviour of the truncate method
       def validates?(initial_string, truncate_at, expected_string)
-        return true if initial_string.length <= truncate_at
-
+        return true if initial_string.length <= truncate_at ||
+          # https://github.com/rails/rails/issues/30600
+          truncate_at == 1 || truncate_at == 2
+        
         if expected_string.length <= truncate_at &&
            expected_string =~ /.*\.\.\.\z/
           true
@@ -29,12 +31,14 @@ describe String do
       # Add some spaces to the range
       10.times { range << ' ' }
       # Finally generate the string
-      initial_string_rand = (0...50).map { range[rand(range.length)] }.join
-      truncate_at_rand = rand(1..70)
-      expected_string_rand = initial_string_rand.truncate(truncate_at_rand)
-      expect(
-        validates?(initial_string_rand, truncate_at_rand, expected_string_rand)
-      ).to eq true
+      10_000.times do
+        initial_string_rand = (0...50).map { range[rand(range.length)] }.join
+        truncate_at_rand = rand(1..70)
+        expected_string_rand = initial_string_rand.truncate(truncate_at_rand)
+        expect(
+          validates?(initial_string_rand, truncate_at_rand, expected_string_rand)
+        ).to eq true
+      end
 
       initial_string1 = 'abc'
       truncate_at1 = 5
