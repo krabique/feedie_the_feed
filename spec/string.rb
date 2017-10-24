@@ -27,7 +27,7 @@ describe String do
       # Symbols range
       range = [('a'..'z'), ('A'..'Z')].map(&:to_a).flatten
       # Add some spaces to the range
-      10.times { |_n| range << ' ' }
+      10.times { range << ' ' }
       # Finally generate the string
       initial_string_rand = (0...50).map { range[rand(range.length)] }.join
       truncate_at_rand = rand(1..70)
