@@ -10,7 +10,7 @@ class String
   #   (pls, don't sue me)
   #
   # @param truncate_at [Integer] The desired length to cut the string to
-  # @return [self] The truncated string
+  # @return [String] The truncated string
   def truncate(truncate_at)
     return dup unless length > truncate_at
 
