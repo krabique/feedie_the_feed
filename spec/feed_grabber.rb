@@ -89,7 +89,8 @@ describe FeedieTheFeed::FeedGrabber do
     end
 
     context 'with RSS feed' do
-      rss_feed = 'http://rss.cnn.com/rss/edition_world.rss'
+      rss_feed = 'https://raw.githubusercontent.com/krabique48/' \
+                 'feedie_the_feed/master/rss_test_sample'
 
       it 'should return feed when we use the get instance method' do
         @feed_grabber = FeedieTheFeed::FeedGrabber.new
@@ -106,12 +107,12 @@ describe FeedieTheFeed::FeedGrabber do
         feed.each do |entry|
           expect(entry).to be_a(Hash)
 
-          # expect(entry).to have_key('entry_id')
-          # expect(entry).to have_key('title')
-          # expect(entry).to have_key('summary')
+          expect(entry).to have_key('entry_id')
+          expect(entry).to have_key('title')
+          expect(entry).to have_key('summary')
           expect(entry).to have_key('url')
-          # expect(entry).to have_key('published')
-          # expect(entry).to have_key('image')
+          expect(entry).to have_key('published')
+          expect(entry).to have_key('image')
         end
       end
     end
