@@ -15,8 +15,40 @@ describe FeedieTheFeed::FeedGrabber do
     
     it "#get"
     it "#initialize"
-    it "#reset_fb_posts_limit"
-    it "#reset_keys"
+    it "should reset @facebook_posts_limit_global variable to a default " \
+      "value given in @@defaults hash of Facebook module when we call " \
+      "the reset_fb_posts_limit! method" do
+      initial_fb_posts_limit = rand(1..100)
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+        facebook_posts_limit: initial_fb_posts_limit
+      )
+      @feed_grabber.reset_fb_posts_limit!
+      changed_fb_posts_limit = 
+        @feed_grabber.instance_variable_get(:@facebook_posts_limit_global)
+      
+      expect(changed_fb_posts_limit).to eq (
+        FeedieTheFeed::Facebook
+          .class_variable_get(:@@defaults)[:facebook_posts_limit]
+      )
+    end
+    
+    it "should set @facebook_appid_global and @facebook_secret_global to " \
+      "nil when we call the reset_keys! method" do
+      initial_facebook_appid = '123'
+      initial_facebook_appid = '123'
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+        facebook_appid: initial_facebook_appid,
+        facebook_secret: initial_facebook_appid
+      )
+      @feed_grabber.reset_keys!
+      changed_facebook_appid = 
+        @feed_grabber.instance_variable_get(:@facebook_appid_global)
+      changed_facebook_secret = 
+        @feed_grabber.instance_variable_get(:@facebook_secret_global)
+      
+      expect(changed_facebook_appid).to eq nil
+      expect(changed_facebook_secret).to eq nil
+    end
     
     it "exception FacebookAuthorisationError"
     it "exception BadUrl"
