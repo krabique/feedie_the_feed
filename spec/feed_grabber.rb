@@ -173,6 +173,14 @@ describe FeedieTheFeed::FeedGrabber do
       end.to raise_error(FeedieTheFeed::BadFacebookPostsLimit)
     end
 
-    it 'exception ConnectionFailed'
+    it 'should raise FeedieTheFeed::ConnectionFailed exception when calling ' \
+      'get instance method with a URL link to a non-existent resource' do
+      expect do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new
+        # some random non-existent url
+        url = 'http://ndrnrt.com'
+        @feed_grabber.get(url)
+      end.to raise_error(FeedieTheFeed::ConnectionFailed)
+    end
   end
 end
