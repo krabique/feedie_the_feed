@@ -13,7 +13,108 @@ describe FeedieTheFeed::FeedGrabber do
       expect(output).to eq value
     end
 
-    it '#get'
+    context 'with Facebook pages feed' do
+      facebook_page = 'https://www.facebook.com/PokerGP'
+      facebook_appid = ENV['FACEBOOK_APPID']
+      facebook_secret = ENV['FACEBOOK_SECRET']
+
+      if facebook_appid && facebook_secret
+        it 'should return feed when we call the get instance method ' \
+          'with Facebook credentials included in the call' do
+          @feed_grabber = FeedieTheFeed::FeedGrabber.new
+          f = @feed_grabber.get(
+            facebook_page,
+            facebook_appid: facebook_appid,
+            facebook_secret: facebook_secret
+          )
+          expect(f).to be_truthy
+        end
+
+        it 'should return feed when we call the get instance method ' \
+          "with Facebook credentials provided through the object's " \
+          'global values' do
+          @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+            facebook_appid: facebook_appid,
+            facebook_secret: facebook_secret
+          )
+          f = @feed_grabber.get(facebook_page)
+          expect(f).to be_truthy
+        end
+
+        it 'should return feed when we call the get instance method ' \
+          'with Facebook credentials not included anywhere, and thus provided' \
+          'by the environment variables FACEBOOK_APPID and FACEBOOK_SECRET' do
+          @feed_grabber = FeedieTheFeed::FeedGrabber.new
+          f = @feed_grabber.get(facebook_page)
+          expect(f).to be_truthy
+        end
+
+        it 'should return feed when we call the get instance method with ' \
+          'Facebook credentials as parameters, even if Facebook credentials ' \
+          'have already been provided during object creation' \
+          'provided on class instance creation' do
+          @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+            facebook_appid: '123',
+            facebook_secret: '123'
+          )
+          f = @feed_grabber.get(
+            facebook_page,
+            facebook_appid: facebook_appid,
+            facebook_secret: facebook_secret
+          )
+          expect(f).to be_truthy
+        end
+
+        it 'should return an array of hashes with certain keys when we ' \
+          'use the get instance method' do
+          @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+            facebook_appid: facebook_appid,
+            facebook_secret: facebook_secret
+          )
+          feed = @feed_grabber.get(facebook_page)
+
+          expect(feed).to be_a(Array)
+          feed.each do |entry|
+            expect(entry).to be_a(Hash)
+
+            expect(entry).to have_key('entry_id')
+            expect(entry).to have_key('title')
+            expect(entry).to have_key('summary')
+            expect(entry).to have_key('url')
+            expect(entry).to have_key('published')
+            expect(entry).to have_key('image')
+          end
+        end
+      end
+    end
+
+    context 'with RSS feed' do
+      rss_feed = 'http://rss.cnn.com/rss/edition_world.rss'
+
+      it 'should return feed when we use the get instance method' do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new
+        f = @feed_grabber.get(rss_feed)
+        expect(f).to be_truthy
+      end
+
+      it 'should return an array of hashes with certain keys when we ' \
+          'use the get instance method' do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new
+        feed = @feed_grabber.get(rss_feed)
+
+        expect(feed).to be_a(Array)
+        feed.each do |entry|
+          expect(entry).to be_a(Hash)
+
+          # expect(entry).to have_key('entry_id')
+          # expect(entry).to have_key('title')
+          # expect(entry).to have_key('summary')
+          expect(entry).to have_key('url')
+          # expect(entry).to have_key('published')
+          # expect(entry).to have_key('image')
+        end
+      end
+    end
 
     it 'should create new FeedGrabber class instance with the correct ' \
       'provided values for @facebook_appid_global, @facebook_secret_global ' \
