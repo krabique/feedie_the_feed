@@ -36,11 +36,11 @@ end
 # # instead of using those from environment variables FACEBOOK_APPID and
 # # FACEBOOK_SECRET
 # @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-#   facebook_appid: "123", 
+#   facebook_appid: "123",
 #   facebook_secret: "123",
 #   facebook_posts_limit: 10
 # )
-# 
+#
 # def get_feed(links)
 #   links.each do |link|
 #     f = @feed_grabber.get(link)
