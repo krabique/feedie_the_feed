@@ -9,12 +9,30 @@ module FeedieTheFeed
   module Facebook
     private
 
+    def valid_facebook_posts_limit?(limit)
+      if limit.is_a?(Integer) && limit <= 100 && limit > 0
+        limit
+      else
+        raise BadFacebookPostsLimit, 'Facebook posts limit can only be an ' \
+          'integer from 1 to 100'
+      end
+    end
+
+    def sanitized_facebook_posts_limit(facebook_posts_limit)
+      if facebook_posts_limit
+        valid_facebook_posts_limit?(facebook_posts_limit)
+      else
+        @defaults[:facebook_posts_limit]
+      end
+    end
+
     def get_facebook_feed(url,
                           facebook_posts_limit,
                           facebook_appid,
                           facebook_secret)
+      facebook_posts_limit =
+        sanitized_facebook_posts_limit(facebook_posts_limit)
       authorise_facebook(facebook_appid, facebook_secret)
-      facebook_posts_limit ||= @defaults[:facebook_posts_limit]
       posts = @fb_graph_api.get_connection(
         get_fb_page_name(url),
         'posts',

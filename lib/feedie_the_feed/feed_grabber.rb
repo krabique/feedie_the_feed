@@ -85,10 +85,7 @@ module FeedieTheFeed
     # @raise [BadFacebookPostsLimit] Exception used when Facebook posts limit is
     #   out of range or not an integer
     def fb_posts_limit(limit)
-      unless limit.is_a?(Integer) && limit <= 100 && limit > 0
-        raise BadFacebookPostsLimit, 'Facebook posts limit can only be an ' \
-          'integer from 1 to 100'
-      end
+      valid_facebook_posts_limit?(limit)
       @facebook_posts_limit_global = limit
     end
 
