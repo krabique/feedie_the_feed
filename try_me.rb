@@ -26,7 +26,7 @@ def get_feed(links)
     p 'title: '     + f.first['title'] if f.first['title']
     p 'summary: '   + f.first['summary'] if f.first['summary']
     p 'url: '       + f.first['url']
-    p 'published: ' + f.first['published'].to_s
+    p 'published: ' + f.first['published'].to_s if f.first['published']
     p 'image: '     + f.first['image'] if f.first['image']
     p '----------------------------------'
   end
@@ -36,8 +36,8 @@ end
 # # instead of using those from environment variables FACEBOOK_APPID and
 # # FACEBOOK_SECRET
 # @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-#   facebook_appid: "123",
-#   facebook_secret: "123",
+#   facebook_appid: '123',
+#   facebook_secret: '123',
 #   facebook_posts_limit: 10
 # )
 #
@@ -48,7 +48,7 @@ end
 #     p 'title: '     + f.first['title'] if f.first['title']
 #     p 'summary: '   + f.first['summary'] if f.first['summary']
 #     p 'url: '       + f.first['url']
-#     p 'published: ' + f.first['published'].to_s
+#     p 'published: ' + f.first['published'].to_s if f.first['published']
 #     p 'image: '     + f.first['image'] if f.first['image']
 #     p '----------------------------------'
 #   end

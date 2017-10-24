@@ -10,9 +10,16 @@ module FeedieTheFeed
     def get_rss_feed(url)
       feed = Feedjira::Feed.fetch_and_parse(url)
       feed.entries.map!(&:to_h)
+      sanitise_feed(feed)
     rescue Feedjira::NoParserAvailable => e
       raise BadUrl.new("The url provided doesn't seem to contain any feed. " \
         "(url: #{url})", e)
+    end
+
+    def sanitise_feed(feed)
+      feed.each do |entry|
+        entry['entry_id'] = entry['url'] if entry['entry_id'].nil?
+      end
     end
   end
 end
