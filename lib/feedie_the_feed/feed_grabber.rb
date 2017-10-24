@@ -31,7 +31,7 @@ module FeedieTheFeed
     def initialize(options = {})
       # This hash is used to store default values for things like Facebook posts
       # limit.
-      @defaults = {facebook_posts_limit: 10}
+      @defaults = { facebook_posts_limit: 10 }
       @facebook_appid_global = options[:facebook_appid]
       @facebook_secret_global = options[:facebook_secret]
       fb_posts_limit(
