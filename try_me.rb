@@ -11,7 +11,7 @@ links_rss = ['http://abcnews.go.com/abcnews/topstories',
              'http://feeds.bbci.co.uk/news/world/rss.xml']
 
 # Will use FACEBOOK_APPID and FACEBOOK_SECRET environment variables, if those
-# are nil
+# provided here are nil
 @facebook_appid = nil
 @facebook_secret = nil
 @facebook_posts_limit = nil
@@ -35,11 +35,10 @@ end
 # # Uncomment and change these accordingly if you want to provide the keys here,
 # # instead of using those from environment variables FACEBOOK_APPID and
 # # FACEBOOK_SECRET
-# facebook_appid = "123"
-# facebook_secret = "123"
-# facebook_posts_limit = 10
 # @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-#   facebook_appid, facebook_secret, facebook_posts_limit
+#   facebook_appid: "123", 
+#   facebook_secret: "123",
+#   facebook_posts_limit: 10
 # )
 # 
 # def get_feed(links)

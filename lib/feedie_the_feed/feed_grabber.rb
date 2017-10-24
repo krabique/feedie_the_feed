@@ -18,19 +18,22 @@ module FeedieTheFeed
 
     # Returns a new instance of FeedGrabber.
     #
-    # @param facebook_appid [String] The Facebook AppID to be used globally in
-    #   this object
-    # @param facebook_secret [String] The Facebook secret key to be used
+    # @param options [Hash] The options to use for the FeedGrabber constructor
+    # @option options [String] :facebook_appid The Facebook AppID to be used
     #   globally in this object
-    # @param facebook_posts_limit [Integer] The amount of Facebook posts to get
-    #   by default (should be in 1..100)
+    # @option options [String] :facebook_secret The Facebook secret key to be
+    #   used globally in this object
+    # @option options [Integer] :facebook_posts_limit The amount of Facebook
+    #   posts to get by default (should be in 1..100)
+    #
     # @raise [BadFacebookPostsLimit] Exception used when Facebook posts limit is
     #   out of range or not an integer
-    def initialize(facebook_appid = nil, facebook_secret = nil,
-                   facebook_posts_limit = @@defaults[:facebook_posts_limit])
-      @facebook_appid_global = facebook_appid
-      @facebook_secret_global = facebook_secret
-      fb_posts_limit(facebook_posts_limit)
+    def initialize(options = {})
+      @facebook_appid_global = options[:facebook_appid]
+      @facebook_secret_global = options[:facebook_secret]
+      fb_posts_limit(
+        options[:facebook_posts_limit] || @@defaults[:facebook_posts_limit]
+      )
     end
 
     # Gets an array of hashes that are RSS or Facebook posts.
