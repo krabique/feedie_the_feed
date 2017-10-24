@@ -17,7 +17,7 @@ describe FeedieTheFeed::FeedGrabber do
     it '#get'
     it '#initialize'
     it 'should reset @facebook_posts_limit_global variable to a default ' \
-      'value given in @@defaults hash of Facebook module when we call ' \
+      'value given in @defaults hash of Facebook module when we call ' \
       'the reset_fb_posts_limit! method' do
       initial_fb_posts_limit = rand(1..100)
       @feed_grabber = FeedieTheFeed::FeedGrabber.new(
@@ -28,8 +28,7 @@ describe FeedieTheFeed::FeedGrabber do
         @feed_grabber.instance_variable_get(:@facebook_posts_limit_global)
 
       expect(changed_fb_posts_limit).to eq(
-        FeedieTheFeed::Facebook
-          .class_variable_get(:@@defaults)[:facebook_posts_limit]
+        @feed_grabber.instance_variable_get(:@defaults)[:facebook_posts_limit]
       )
     end
 

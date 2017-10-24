@@ -29,10 +29,13 @@ module FeedieTheFeed
     # @raise [BadFacebookPostsLimit] Exception used when Facebook posts limit is
     #   out of range or not an integer
     def initialize(options = {})
+      # This hash is used to store default values for things like Facebook posts
+      # limit.
+      @defaults = {facebook_posts_limit: 10}
       @facebook_appid_global = options[:facebook_appid]
       @facebook_secret_global = options[:facebook_secret]
       fb_posts_limit(
-        options[:facebook_posts_limit] || @@defaults[:facebook_posts_limit]
+        options[:facebook_posts_limit] || @defaults[:facebook_posts_limit]
       )
     end
 
@@ -72,7 +75,7 @@ module FeedieTheFeed
 
     # Resets global Facebook posts limit of this object.
     def reset_fb_posts_limit!
-      @facebook_posts_limit_global = @@defaults[:facebook_posts_limit]
+      @facebook_posts_limit_global = @defaults[:facebook_posts_limit]
     end
 
     # Sets global Facebook posts limit for this object.

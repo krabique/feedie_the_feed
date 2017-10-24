@@ -7,10 +7,6 @@ require 'feedie_the_feed/helper_extensions/string'
 module FeedieTheFeed
   # This module handles Facebook queries
   module Facebook
-    # This hash is used to store default values for things like Facebook posts
-    # limit.
-    @@defaults = { facebook_posts_limit: 10 }
-
     private
 
     def get_facebook_feed(url,
@@ -18,7 +14,7 @@ module FeedieTheFeed
                           facebook_appid,
                           facebook_secret)
       authorise_facebook(facebook_appid, facebook_secret)
-      facebook_posts_limit ||= @@defaults[:facebook_posts_limit]
+      facebook_posts_limit ||= @defaults[:facebook_posts_limit]
       posts = @fb_graph_api.get_connection(
         get_fb_page_name(url),
         'posts',
