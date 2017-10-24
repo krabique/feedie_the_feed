@@ -85,7 +85,26 @@ describe FeedieTheFeed::FeedGrabber do
       expect(changed_facebook_secret).to eq nil
     end
 
-    it 'exception FacebookAuthorisationError'
+    it 'should raise FeedieTheFeed::FacebookAuthorisationError exception ' \
+      'when trying to use the get instance method of FeedGrabber class with ' \
+      'wrong Facebook AppID and Facebook secret key' do
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+        facebook_appid: '123',
+        facebook_secret: '123'
+      )
+      expect {
+        @feed_grabber.get('https://www.facebook.com/PokerGP')
+      }.to raise_error(FeedieTheFeed::FacebookAuthorisationError)
+      
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      expect {
+        @feed_grabber.get('https://www.facebook.com/PokerGP',
+          facebook_appid: '123',
+          facebook_secret: '123'
+        )
+      }.to raise_error(FeedieTheFeed::FacebookAuthorisationError)      
+    end
+    
     it 'exception BadUrl'
     it 'exception BadFacebookPostsLimit'
     it 'exception ConnectionFailed'
