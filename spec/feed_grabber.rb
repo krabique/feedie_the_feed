@@ -104,7 +104,29 @@ describe FeedieTheFeed::FeedGrabber do
       end.to raise_error(FeedieTheFeed::FacebookAuthorisationError)
     end
 
-    it 'exception BadUrl'
+    it 'should raise FeedieTheFeed::BadUrl exception when we call the get ' \
+      'instance method with an unvalid URL link' do
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      links = ['http', 'https', 'http:', 'https:', 'http:/', 'https:/',
+               'http://', 'https://', 'http://abc', 'http://abc.', 'abc.com',
+               'abc']
+      links.each do |link|
+        expect do
+          @feed_grabber.get(link)
+        end.to raise_error(FeedieTheFeed::BadUrl)
+      end
+    end
+
+    it 'should raise FeedieTheFeed::BadUrl exception when we call the get ' \
+      'instance method with a URL link that does not contain a feed' do
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      links = ['http://google.com', 'http://google.com/']
+      links.each do |link|
+        expect do
+          @feed_grabber.get(link)
+        end.to raise_error(FeedieTheFeed::BadUrl)
+      end
+    end
 
     it 'should raise FeedieTheFeed::BadFacebookPostsLimit exception when ' \
       'calling fb_posts_limit(limit) instance method with a non integer ' \
