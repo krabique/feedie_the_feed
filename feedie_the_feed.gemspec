@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary = 'A feed posts aggregator for rss and facebook pages'
   s.description = s.summary
   s.homepage = 'https://github.com/krabique48/feedie_the_feed'
-  s.licenses = ['WTFPL']
+  s.licenses = ['MIT']
 
   s.files = Dir.glob('lib/**/*') + %w[LICENSE README.md]
   s.require_path = 'lib'
