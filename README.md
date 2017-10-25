@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/krabique48/feedie_the_feed.svg?branch=master)](https://travis-ci.org/krabique48/feedie_the_feed)
+
 # Feedie The Feed
 
 Hi! My name is Feedie The Feed. I'm a Ruby gem that enables you to aggregate RSS and Facebook pages feed with one entry point, wooop! Just feed me the link and I'll go get them for you, master! Rawr!
