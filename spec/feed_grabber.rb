@@ -13,7 +13,7 @@ describe FeedieTheFeed::FeedGrabber do
       expect(output).to eq value
     end
 
-    context 'with Facebook pages feed' do
+    context 'with Facebook pages' do
       facebook_page = 'https://www.facebook.com/PokerGP'
       facebook_appid = ENV['FACEBOOK_APPID']
       facebook_secret = ENV['FACEBOOK_SECRET']
@@ -51,7 +51,7 @@ describe FeedieTheFeed::FeedGrabber do
 
         it 'should return feed when we call the get instance method with ' \
           'Facebook credentials as parameters, even if Facebook credentials ' \
-          'have already been provided during object creation' \
+          'have already been ' \
           'provided on class instance creation' do
           @feed_grabber = FeedieTheFeed::FeedGrabber.new(
             facebook_appid: '123',
