@@ -484,13 +484,13 @@
       <pre class="lines">
 
 
-90
 91
 92
-93</pre>
+93
+94</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/feedie_the_feed/feed_grabber.rb', line 90</span>
+      <pre class="code"><span class="info file"># File 'lib/feedie_the_feed/feed_grabber.rb', line 91</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_fb_posts_limit'>fb_posts_limit</span><span class='lparen'>(</span><span class='id identifier rubyid_limit'>limit</span><span class='rparen'>)</span>
   <span class='id identifier rubyid_valid_facebook_posts_limit?'>valid_facebook_posts_limit?</span><span class='lparen'>(</span><span class='id identifier rubyid_limit'>limit</span><span class='rparen'>)</span>
@@ -702,12 +702,14 @@ range)</p>
 68
 69
 70
-71</pre>
+71
+72</pre>
     </td>
     <td>
       <pre class="code"><span class="info file"># File 'lib/feedie_the_feed/feed_grabber.rb', line 63</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span> <span class='op'>=</span> <span class='lbrace'>{</span><span class='rbrace'>}</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_url'>url</span> <span class='op'>=</span> <span class='id identifier rubyid_sanitise_web_url'>sanitise_web_url</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
   <span class='kw'>if</span> <span class='id identifier rubyid_facebook_url?'>facebook_url?</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='rparen'>)</span>
     <span class='id identifier rubyid_get_facebook_feed'>get_facebook_feed</span><span class='lparen'>(</span><span class='id identifier rubyid_url'>url</span><span class='comma'>,</span> <span class='id identifier rubyid_options'>options</span><span class='rparen'>)</span>
   <span class='kw'>else</span>
@@ -747,12 +749,12 @@ range)</p>
       <pre class="lines">
 
 
-80
 81
-82</pre>
+82
+83</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/feedie_the_feed/feed_grabber.rb', line 80</span>
+      <pre class="code"><span class="info file"># File 'lib/feedie_the_feed/feed_grabber.rb', line 81</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reset_fb_posts_limit!'>reset_fb_posts_limit!</span>
   <span class='ivar'>@facebook_posts_limit_global</span> <span class='op'>=</span> <span class='ivar'>@defaults</span><span class='lbracket'>[</span><span class='symbol'>:facebook_posts_limit</span><span class='rbracket'>]</span>
@@ -788,13 +790,13 @@ range)</p>
       <pre class="lines">
 
 
-74
 75
 76
-77</pre>
+77
+78</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'lib/feedie_the_feed/feed_grabber.rb', line 74</span>
+      <pre class="code"><span class="info file"># File 'lib/feedie_the_feed/feed_grabber.rb', line 75</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reset_keys!'>reset_keys!</span>
   <span class='ivar'>@facebook_appid_global</span> <span class='op'>=</span> <span class='kw'>nil</span>
@@ -810,7 +812,7 @@ range)</p>
 </div>
 
       <div id="footer">
-  Generated on Wed Oct 25 10:45:45 2017 by
+  Generated on Wed Oct 25 14:07:52 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.4.2).
 </div>
