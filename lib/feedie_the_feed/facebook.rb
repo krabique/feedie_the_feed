@@ -26,12 +26,12 @@ module FeedieTheFeed
       end
     end
 
-    def get_facebook_feed(url,
-                          facebook_posts_limit,
-                          facebook_appid,
-                          facebook_secret)
+    def get_facebook_feed(url, options)
+      facebook_appid = options[:facebook_appid] || @facebook_appid_global
+      facebook_secret = options[:facebook_secret] || @facebook_secret_global
       facebook_posts_limit =
-        sanitized_facebook_posts_limit(facebook_posts_limit)
+        sanitized_facebook_posts_limit(options[:facebook_posts_limit])
+        
       authorise_facebook(facebook_appid, facebook_secret)
       posts = @fb_graph_api.get_connection(
         get_fb_page_name(url),

@@ -61,10 +61,13 @@ module FeedieTheFeed
     #
     # @return [Array] The array of hashes of RSS entries or Facebook posts
     def get(url, options = {})
-      get_proper_feed(url,
-                      options[:facebook_posts_limit],
-                      options[:facebook_appid],
-                      options[:facebook_secret])
+      if facebook_url?(url)
+        get_facebook_feed(url, options)
+      else
+        get_rss_feed(url)
+      end
+    rescue Faraday::ConnectionFailed => e
+      raise ConnectionFailed, e      
     end
 
     # Resets global Facebook AppID and secret key of this object.
@@ -90,24 +93,6 @@ module FeedieTheFeed
     end
 
     private
-
-    def get_proper_feed(url,
-                        facebook_posts_limit,
-                        facebook_appid,
-                        facebook_secret)
-      facebook_appid ||= @facebook_appid_global
-      facebook_secret ||= @facebook_secret_global
-      if facebook_url?(url)
-        get_facebook_feed(url,
-                          facebook_posts_limit,
-                          facebook_appid,
-                          facebook_secret)
-      else
-        get_rss_feed(url)
-      end
-    rescue Faraday::ConnectionFailed => e
-      raise ConnectionFailed, e
-    end
 
     def facebook_url?(url)
       uri = URI.parse(url)
