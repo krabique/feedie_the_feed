@@ -21,4 +21,7 @@ module FeedieTheFeed
 
   # Exception used when a Facebook page name provided doesn't seem to exist
   class BadFacebookPageName < Error; end
+
+  # Exception used when trying to set non-string Facebook AppID and secret key
+  class BadFacebookAppIDAndSecretKey < Error; end
 end

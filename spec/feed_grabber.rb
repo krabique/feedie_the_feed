@@ -332,5 +332,35 @@ describe FeedieTheFeed::FeedGrabber do
       feed = @feed_grabber.get(facebook_page)
       expect(feed).to be_truthy
     end
+
+    it 'should set @facebook_appid_global and @facebook_secret_global to ' \
+      'provided values when we call the ' \
+      'fb_appid_and_secret_key(appid, secret) instance method' do
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      initial_appid = '123abc'
+      initial_secret = '123abc'
+      @feed_grabber.fb_appid_and_secret_key(initial_appid, initial_secret)
+
+      changed_appid =
+        @feed_grabber.instance_variable_get(:@facebook_appid_global)
+      changed_secret =
+        @feed_grabber.instance_variable_get(:@facebook_secret_global)
+
+      expect(changed_appid).to eq initial_appid
+      expect(changed_secret).to eq initial_secret
+    end
+
+    it 'should raise FeedieTheFeed::BadFacebookAppIDAndSecretKey ' \
+      'exception when we call ' \
+      'the fb_appid_and_secret_key(appid, secret) instance method with ' \
+      'non-string parameters' do
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      initial_appid = 123
+      initial_secret = 123
+
+      expect do
+        @feed_grabber.fb_appid_and_secret_key(initial_appid, initial_secret)
+      end.to raise_error(FeedieTheFeed::BadFacebookAppIDAndSecretKey)
+    end
   end
 end

@@ -77,6 +77,23 @@ module FeedieTheFeed
       @facebook_secret_global = nil
     end
 
+    # Sets Facebook AppID and secret key for this object.
+    #
+    # @param facebook_appid [String] Facebook AppID to set to this object
+    # @param facebook_secret [String] Facebook secret key to set to this object
+    # @raise [BadFacebookAppIDAndSecretKey] Exception used when trying
+    #   to set non-string Facebook AppID and secret key
+    def fb_appid_and_secret_key(facebook_appid, facebook_secret)
+      if facebook_appid.is_a?(String) && facebook_secret.is_a?(String)
+        @facebook_appid_global = facebook_appid
+        @facebook_secret_global = facebook_secret
+      else
+        raise BadFacebookAppIDAndSecretKey, 'Facebook AppID and secret key ' \
+          'must be strings (input classes: ' \
+          "#{facebook_appid.class} and #{facebook_secret.class})"
+      end
+    end
+
     # Resets global Facebook posts limit of this object.
     def reset_fb_posts_limit!
       @facebook_posts_limit_global = @defaults[:facebook_posts_limit]

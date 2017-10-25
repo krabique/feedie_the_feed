@@ -60,15 +60,197 @@
       <div id="content"><div id='filecontents'>
 <h1 id="label-Feedie+The+Feed">Feedie The Feed</h1>
 
-<p>under development… coming soon…</p>
+<p>Hi! My name is Feedie The Feed. I&#39;m a Ruby gem that enables you to
+aggregate RSS and Facebook pages feed with one entry point, wooop! Just
+feed me the link and I&#39;ll go get them for you, master! Rawr!</p>
 
-<h2 id="label-If+you+feel+adventurous...">If you feel adventurous…</h2>
+<h2 id="label-Technology">Technology</h2>
 
-<p>…just check <code>try_me.rb</code> out, it&#39;s quite self-explanatory.</p>
+<p>I should work on Ruby 2.2 and over. I&#39;m built with great help from
+these cool gems: * <a
+href="https://github.com/feedjira/feedjira">feedjira</a> - for RSS feed *
+<a href="https://github.com/arsduo/koala">koala</a> - for the Facebook API
+* <a href="https://github.com/weppos/publicsuffix-ruby">public_suffix</a> -
+for parsing the links * <a href="https://github.com/skorks/nesty">nesty</a>
+- for cute nested exceptions</p>
+
+<h2 id="label-Getting+Started">Getting Started</h2>
+
+<h3 id="label-Installing">Installing</h3>
+
+<p>You can just</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_gem'>gem</span> <span class='id identifier rubyid_install'>install</span> <span class='id identifier rubyid_feedie_the_feed'>feedie_the_feed</span>
+</code></pre>
+
+<p>and you&#39;re good to go! Although it may contain a slightly older
+version, so you can clone me (oh the 21st century), if you feel
+adventurous!</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_git'>git</span> <span class='id identifier rubyid_clone'>clone</span> <span class='id identifier rubyid_git'>git</span><span class='ivar'>@github</span><span class='period'>.</span><span class='id identifier rubyid_com'>com</span><span class='symbol'>:krabique48</span><span class='op'>/</span><span class='id identifier rubyid_feedie_the_feed'>feedie_the_feed</span><span class='period'>.</span><span class='id identifier rubyid_git'>git</span>
+</code></pre>
+
+<h3 id="label-Running+the+tests">Running the tests</h3>
+
+<p>Just run RSpec and watch it go green! But you&#39;ll have to clone the repo
+for that, since tests aren&#39;t included in the gem.</p>
+
+<pre class="code ruby"><code class="ruby">rspec spec/*</code></pre>
+
+<h3 id="label-Documentation">Documentation</h3>
+
+<p>Have my bro YARD generate the documentation for you</p>
+
+<pre class="code ruby"><code class="ruby"><span class='id identifier rubyid_yard'>yard</span> <span class='id identifier rubyid_doc'>doc</span>
+</code></pre>
+
+<p>Or just visit <a
+href="http://www.rubydoc.info/gems/feedie_the_feed">www.rubydoc.info/gems/feedie_the_feed</a>/
+for that matter.</p>
+
+<h2 id="label-How+to+use">How to use</h2>
+
+<h3 id="label-try_me.rb">try_me.rb</h3>
+
+<p>You can check <code>try_me.rb</code> out, it&#39;s quite self-explanatory.</p>
+
+<h3 id="label-RSS">RSS</h3>
+
+<p>Very simple, create FeedieTheFeed::FeedGrabber object and use it&#39;s get
+method with a URL as a parameter:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='ivar'>@feed_grabber</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FeedieTheFeed.html" title="FeedieTheFeed (module)">FeedieTheFeed</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html" title="FeedieTheFeed::FeedGrabber (class)">FeedGrabber</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html#initialize-instance_method" title="FeedieTheFeed::FeedGrabber#initialize (method)">new</a></span></span>
+<span class='id identifier rubyid_feed'>feed</span> <span class='op'>=</span> <span class='ivar'>@feed_grabber</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span>
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>https://raw.githubusercontent.com/krabique48/</span><span class='tstring_end'>&#39;</span></span> \
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>feedie_the_feed/master/rss_test_sample</span><span class='tstring_end'>&#39;</span></span>
+<span class='rparen'>)</span>
+</code></pre>
+
+<p>(return format is explained below)</p>
+
+<h3 id="label-Facebook">Facebook</h3>
+
+<p>To use the gem with Facebook you&#39;ll have to use your Facebook AppID and
+Facebook secret key.The simplest way to provide those is to just have them
+in your environment variables as FACEBOOK_APPID and FACEBOOK_SECRET. This
+way, all you have to do is create a new instance of the
+FeedieTheFeed::FeedGrabber class and call it&#39;s get method with a URL to
+a Facebook page as a parameter.</p>
+
+<pre class="code ruby"><code class="ruby"><span class='ivar'>@feed_grabber</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FeedieTheFeed.html" title="FeedieTheFeed (module)">FeedieTheFeed</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html" title="FeedieTheFeed::FeedGrabber (class)">FeedGrabber</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html#initialize-instance_method" title="FeedieTheFeed::FeedGrabber#initialize (method)">new</a></span></span>
+<span class='ivar'>@feed_grabber</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>https://www.facebook.com/PokerGP</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+</code></pre>
+
+<h4 id="label-Facebook+credentials+priorities">Facebook credentials priorities</h4>
+
+<p>Facebook AppID and secret key follow a priority rule:</p>
+
+<pre class="code ruby"><code class="ruby">get method parameters &gt; object values &gt; environment variables</code></pre>
+
+<p>So, you can also provide the Facebook credentials as parameters in the get
+method:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='ivar'>@feed_grabber</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FeedieTheFeed.html" title="FeedieTheFeed (module)">FeedieTheFeed</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html" title="FeedieTheFeed::FeedGrabber (class)">FeedGrabber</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html#initialize-instance_method" title="FeedieTheFeed::FeedGrabber#initialize (method)">new</a></span></span>
+<span class='ivar'>@feed_grabber</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span>
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>https://www.facebook.com/PokerGP</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+  <span class='label'>facebook_appid:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>123</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+  <span class='label'>facebook_secret:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>123</span><span class='tstring_end'>&#39;</span></span>
+<span class='rparen'>)</span>
+</code></pre>
+
+<p>Or during object creation:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='ivar'>@feed_grabber</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FeedieTheFeed.html" title="FeedieTheFeed (module)">FeedieTheFeed</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html" title="FeedieTheFeed::FeedGrabber (class)">FeedGrabber</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html#initialize-instance_method" title="FeedieTheFeed::FeedGrabber#initialize (method)">new</a></span></span><span class='lparen'>(</span>
+  <span class='label'>facebook_appid:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>123</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+  <span class='label'>facebook_secret:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>123</span><span class='tstring_end'>&#39;</span></span>
+<span class='rparen'>)</span>
+<span class='ivar'>@feed_grabber</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>https://www.facebook.com/PokerGP</span><span class='tstring_end'>&#39;</span></span><span class='rparen'>)</span>
+</code></pre>
+
+<h4 id="label-Facebook+posts+limit">Facebook posts limit</h4>
+
+<p>You can also set the amount of posts you want to get, similarily to
+Facebook credentials (it also follows the same priority rule):</p>
+
+<pre class="code ruby"><code class="ruby"><span class='ivar'>@feed_grabber</span> <span class='op'>=</span> <span class='const'><span class='object_link'><a href="FeedieTheFeed.html" title="FeedieTheFeed (module)">FeedieTheFeed</a></span></span><span class='op'>::</span><span class='const'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html" title="FeedieTheFeed::FeedGrabber (class)">FeedGrabber</a></span></span><span class='period'>.</span><span class='id identifier rubyid_new'><span class='object_link'><a href="FeedieTheFeed/FeedGrabber.html#initialize-instance_method" title="FeedieTheFeed::FeedGrabber#initialize (method)">new</a></span></span><span class='lparen'>(</span><span class='label'>facebook_posts_limit:</span> <span class='int'>50</span><span class='rparen'>)</span>
+</code></pre>
+
+<p>or</p>
+
+<pre class="code ruby"><code class="ruby"><span class='ivar'>@feed_grabber</span><span class='period'>.</span><span class='id identifier rubyid_get'>get</span><span class='lparen'>(</span><span class='id identifier rubyid_some_url'>some_url</span><span class='comma'>,</span> <span class='label'>facebook_posts_limit:</span> <span class='int'>50</span><span class='rparen'>)</span>
+</code></pre>
+
+<p>and if you don&#39;t provide it at all, it shall default to 10.</p>
+
+<h3 id="label-Output+format">Output format</h3>
+
+<p>So the <code>get</code> method returns an <strong>array of hashes</strong>,
+where each hash is either a Facebook page post or an RSS entry.</p>
+
+<h4 id="label-Hash+keys">Hash keys</h4>
+
+<h5 id="label-Facebook">Facebook</h5>
+
+<p>Facebook hashes would always have these keys:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>entry_id</span><span class='tstring_end'>&#39;</span></span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>url</span><span class='tstring_end'>&#39;</span></span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>published</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<p>plus some additional ones that may not always be there, due to the nature
+of Facebook posts:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>title</span><span class='tstring_end'>&#39;</span></span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>summary</span><span class='tstring_end'>&#39;</span></span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>image</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<h5 id="label-RSS">RSS</h5>
+
+<p>With RSS, the only two keys that would be there no matter what are
+<code>entry_id</code> and <code>url</code>, due to the nature of RSS.
+Although, most of the time, some other keys will also be present:</p>
+
+<pre class="code ruby"><code class="ruby"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>entry_id</span><span class='tstring_end'>&#39;</span></span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>title</span><span class='tstring_end'>&#39;</span></span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>summary</span><span class='tstring_end'>&#39;</span></span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>url</span><span class='tstring_end'>&#39;</span></span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>published</span><span class='tstring_end'>&#39;</span></span>
+<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>image</span><span class='tstring_end'>&#39;</span></span>
+</code></pre>
+
+<h3 id="label-Other+utility+methods">Other utility methods</h3>
+
+<h4 id="label-fb_appid_and_secret_key-28facebook_appid-2C+facebook_secret-29">fb_appid_and_secret_key(facebook_appid, facebook_secret)</h4>
+
+<p><code>fb_appid_and_secret_key(facebook_appid, facebook_secret)</code> is
+used to set the Facebook credentials for the object.</p>
+
+<h4 id="label-reset_keys-21">reset_keys!</h4>
+
+<p><code>reset_keys!</code> is used to reset the Facebook credentials for the
+object.</p>
+
+<h4 id="label-fb_posts_limit-28limit-29">fb_posts_limit(limit)</h4>
+
+<p><code>fb_posts_limit(limit)</code> is used to set the object&#39;s Facebook
+posts limit (should be an integer from 1 to 100).</p>
+
+<h4 id="label-reset_fb_posts_limit-21">reset_fb_posts_limit!</h4>
+
+<p><code>reset_fb_posts_limit!</code> is used to reset the object&#39;s
+Facebook posts limit.</p>
+
+<h2 id="label-Authors">Authors</h2>
+<ul><li>
+<p><strong>Oleg Larkin</strong> - <em>Initial work</em> - <a
+href="https://github.com/krabique48">krabique48</a> (krabique48@gmail.com)</p>
+</li></ul>
 </div></div>
 
       <div id="footer">
-  Generated on Wed Oct 25 14:07:52 2017 by
+  Generated on Wed Oct 25 21:09:48 2017 by
   <a href="http://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.9 (ruby-2.4.2).
 </div>
