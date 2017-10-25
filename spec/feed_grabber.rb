@@ -218,7 +218,7 @@ describe FeedieTheFeed::FeedGrabber do
       'instance method with an unvalid URL link' do
       @feed_grabber = FeedieTheFeed::FeedGrabber.new
       links = ['http', 'https', 'http:', 'https:', 'http:/', 'https:/',
-               'http://', 'https://', 'http://google', 'http://google.', 
+               'http://', 'https://', 'http://google', 'http://google.',
                'google.com', 'abc']
       links.each do |link|
         expect do
@@ -319,18 +319,18 @@ describe FeedieTheFeed::FeedGrabber do
       "prefix, or not having it at all (i.e. 'www.facebook.com/abc' and " \
       "'https://www.facebook.com/abc'" do
       @feed_grabber = FeedieTheFeed::FeedGrabber.new
-      
+
       facebook_page = 'https://www.facebook.com/PokerGP'
       feed = @feed_grabber.get(facebook_page)
       expect(feed).to be_truthy
-      
+
       facebook_page = 'http://www.facebook.com/PokerGP'
       feed = @feed_grabber.get(facebook_page)
       expect(feed).to be_truthy
-      
+
       facebook_page = 'www.facebook.com/PokerGP'
       feed = @feed_grabber.get(facebook_page)
-      expect(feed).to be_truthy      
+      expect(feed).to be_truthy
     end
   end
 end
