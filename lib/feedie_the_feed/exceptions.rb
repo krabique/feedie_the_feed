@@ -18,7 +18,7 @@ module FeedieTheFeed
 
   # Exception used when TCP connection could not be established
   class ConnectionFailed < Error; end
-    
+
   # Exception used when a Facebook page name provided doesn't seem to exist
   class BadFacebookPageName < Error; end
 end

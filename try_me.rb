@@ -31,8 +31,8 @@ def get_feed(links, options = {})
   end
 end
 
-# # Uncomment and change these accordingly if you want to provide the keys on 
-# # object creation, instead of using those from environment variables 
+# # Uncomment and change these accordingly if you want to provide the keys on
+# # object creation, instead of using those from environment variables
 # # FACEBOOK_APPID and FACEBOOK_SECRET
 # options = {
 #   facebook_appid:       '123',
