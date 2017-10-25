@@ -67,7 +67,7 @@ module FeedieTheFeed
         get_rss_feed(url)
       end
     rescue Faraday::ConnectionFailed => e
-      raise ConnectionFailed, e      
+      raise ConnectionFailed, e
     end
 
     # Resets global Facebook AppID and secret key of this object.
