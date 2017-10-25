@@ -67,10 +67,7 @@ describe FeedieTheFeed::FeedGrabber do
 
         it 'should return an array of hashes with certain keys when we ' \
           'use the get instance method' do
-          @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-            facebook_appid: facebook_appid,
-            facebook_secret: facebook_secret
-          )
+          @feed_grabber = FeedieTheFeed::FeedGrabber.new
           feed = @feed_grabber.get(facebook_page)
 
           expect(feed).to be_a(Array)
