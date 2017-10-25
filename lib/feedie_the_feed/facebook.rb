@@ -33,13 +33,17 @@ module FeedieTheFeed
         sanitized_facebook_posts_limit(options[:facebook_posts_limit])
 
       authorise_facebook(facebook_appid, facebook_secret)
-      posts = @fb_graph_api.get_connection(
+      posts = facebook_api_query(url, facebook_posts_limit)
+      formalize_fb_feed_array(posts.to_a)
+    end
+
+    def facebook_api_query(url, facebook_posts_limit)
+      @fb_graph_api.get_connection(
         get_fb_page_name(url),
         'posts',
         limit: facebook_posts_limit, # max 100
         fields: %w[message id from type picture link created_time]
       )
-      formalize_fb_feed_array(posts.to_a)
     end
 
     def authorise_facebook(facebook_appid, facebook_secret)
