@@ -162,9 +162,9 @@ With RSS, the only two keys that would be there no matter what are `entry_id` an
 
 `fb_appid_and_secret_key(facebook_appid, facebook_secret)` is used to set the Facebook credentials for the object.
 
-#### reset_keys!
+#### reset_fb_appid_and_secret_key!
 
-`reset_keys!` is used to reset the Facebook credentials for the object.
+`reset_fb_appid_and_secret_key!` is used to reset the Facebook credentials for the object.
 
 #### fb_posts_limit(limit)
 

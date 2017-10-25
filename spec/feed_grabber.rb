@@ -178,14 +178,14 @@ describe FeedieTheFeed::FeedGrabber do
     end
 
     it 'should set @facebook_appid_global and @facebook_secret_global to ' \
-      'nil when we call the reset_keys! method' do
+      'nil when we call the reset_fb_appid_and_secret_key! method' do
       initial_facebook_appid = '123'
       initial_facebook_secret = '123'
       @feed_grabber = FeedieTheFeed::FeedGrabber.new(
         facebook_appid: initial_facebook_appid,
         facebook_secret: initial_facebook_secret
       )
-      @feed_grabber.reset_keys!
+      @feed_grabber.reset_fb_appid_and_secret_key!
       changed_facebook_appid =
         @feed_grabber.instance_variable_get(:@facebook_appid_global)
       changed_facebook_secret =

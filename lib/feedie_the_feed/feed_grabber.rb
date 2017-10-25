@@ -72,7 +72,7 @@ module FeedieTheFeed
     end
 
     # Resets global Facebook AppID and secret key of this object.
-    def reset_keys!
+    def reset_fb_appid_and_secret_key!
       @facebook_appid_global = nil
       @facebook_secret_global = nil
     end
