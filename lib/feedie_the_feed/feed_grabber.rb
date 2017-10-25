@@ -96,7 +96,7 @@ module FeedieTheFeed
     private
 
     def sanitise_web_url(url)
-      url = "https://#{url}" unless url =~ /\A(http|https):\/\//
+      url = "https://#{url}" unless url =~ %r{\A(http|https)://}
       url
     end
 
