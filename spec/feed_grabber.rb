@@ -82,6 +82,17 @@ describe FeedieTheFeed::FeedGrabber do
             expect(entry).to have_key('image')
           end
         end
+        
+        it 'should raise FeedieTheFeed::BadFacebookPageName exception when ' \
+          'we are trying to call the get instance method with a unvalid ' \
+          'Facebook page name' do
+          expect do
+            @feed_grabber = FeedieTheFeed::FeedGrabber.new
+            # Some non-existent page
+            facebook_page = 'https://www.facebook.com/nrtsrns'
+            @feed_grabber.get(facebook_page)
+          end.to raise_error(FeedieTheFeed::BadFacebookPageName)
+        end
       end
     end
 
