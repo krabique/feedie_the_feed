@@ -30,8 +30,8 @@ describe String do
       range = [('a'..'z'), ('A'..'Z')].map(&:to_a).flatten
       # Add some spaces to the range
       10.times { range << ' ' }
-      # Finally generate the string
-      10_000.times do
+      1_000.times do
+        # Finally generate the string
         initial_string_rand = (0...50).map { range[rand(range.length)] }.join
         truncate_at_rand = rand(1..70)
         changed_string_rand = initial_string_rand.truncate(truncate_at_rand)
