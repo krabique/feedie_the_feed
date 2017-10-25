@@ -82,7 +82,7 @@ describe FeedieTheFeed::FeedGrabber do
             expect(entry).to have_key('image')
           end
         end
-        
+
         it 'should raise FeedieTheFeed::BadFacebookPageName exception when ' \
           'we are trying to call the get instance method with a unvalid ' \
           'Facebook page name' do
@@ -218,8 +218,8 @@ describe FeedieTheFeed::FeedGrabber do
       'instance method with an unvalid URL link' do
       @feed_grabber = FeedieTheFeed::FeedGrabber.new
       links = ['http', 'https', 'http:', 'https:', 'http:/', 'https:/',
-               'http://', 'https://', 'http://abc', 'http://abc.', 'abc.com',
-               'abc']
+               'http://', 'https://', 'http://google', 'http://google.', 
+               'google.com', 'abc']
       links.each do |link|
         expect do
           @feed_grabber.get(link)
@@ -313,6 +313,24 @@ describe FeedieTheFeed::FeedGrabber do
         url = 'http://ndrnrt.com'
         @feed_grabber.get(url)
       end.to raise_error(FeedieTheFeed::ConnectionFailed)
+    end
+
+    it 'should return feed with either having an https:// (or http://) ' \
+      "prefix, or not having it at all (i.e. 'www.facebook.com/abc' and " \
+      "'https://www.facebook.com/abc'" do
+      @feed_grabber = FeedieTheFeed::FeedGrabber.new
+      
+      facebook_page = 'https://www.facebook.com/PokerGP'
+      feed = @feed_grabber.get(facebook_page)
+      expect(feed).to be_truthy
+      
+      facebook_page = 'http://www.facebook.com/PokerGP'
+      feed = @feed_grabber.get(facebook_page)
+      expect(feed).to be_truthy
+      
+      facebook_page = 'www.facebook.com/PokerGP'
+      feed = @feed_grabber.get(facebook_page)
+      expect(feed).to be_truthy      
     end
   end
 end

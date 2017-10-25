@@ -61,6 +61,7 @@ module FeedieTheFeed
     #
     # @return [Array] The array of hashes of RSS entries or Facebook posts
     def get(url, options = {})
+      url = sanitise_web_url(url)
       if facebook_url?(url)
         get_facebook_feed(url, options)
       else
@@ -93,6 +94,11 @@ module FeedieTheFeed
     end
 
     private
+
+    def sanitise_web_url(url)
+      url = "https://#{url}" unless url =~ /\A(http|https):\/\//
+      url
+    end
 
     def facebook_url?(url)
       uri = URI.parse(url)
