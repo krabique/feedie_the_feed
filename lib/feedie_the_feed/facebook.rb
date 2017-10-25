@@ -44,9 +44,9 @@ module FeedieTheFeed
         limit: facebook_posts_limit, # max 100
         fields: %w[message id from type picture link created_time]
       )
-    rescue
+    rescue Koala::Facebook::ClientError => e
       raise BadFacebookPageName.new("A Facebook page with that name doesn't " \
-        "seem to exist. (name: #{get_fb_page_name(url)})")
+        "seem to exist. (name: #{get_fb_page_name(url)})", e)
     end
 
     def authorise_facebook(facebook_appid, facebook_secret)
