@@ -2,3 +2,5 @@
 Gemfile.lock
 test.rb
 .rubocop.yml
+cc-test-reporter
+coverage/*

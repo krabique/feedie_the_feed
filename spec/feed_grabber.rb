@@ -1,3 +1,5 @@
+require 'simplecov'
+
 require 'feedie_the_feed'
 
 # rubocop:disable Metrics/BlockLength
