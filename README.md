@@ -107,7 +107,7 @@ Or during object creation:
 
 #### Facebook posts limit
 
-You can also set the amount of posts you want to get, similarily to Facebook credentials (it also follows the same priority rule):
+You can also set the amount of posts you want to get, similarly to Facebook credentials (it also follows the same priority rule):
 
 ```
 @feed_grabber = FeedieTheFeed::FeedGrabber.new(facebook_posts_limit: 50)
@@ -145,6 +145,18 @@ plus some additional ones that may not always be there, due to the nature of Fac
 'image'
 ```
 
+`'title'`, if not provided, will be automatically generated based on `'summary'`, and will not exceed 80 characters (exactly like RoR truncate(80) method). For example,
+
+```
+summary: The Grand Finals of the #ManilaMasters will start in less than an hour. Newbee or Evil Geniuses, who are you rooting for?
+```
+
+will turn to
+
+```
+title: The Grand Finals of the #ManilaMasters will start is less than an hour...
+```
+
 ##### RSS
 
 With RSS, the only two keys that would be there no matter what are `entry_id` and `url`, due to the nature of RSS. Although, most of the time, some other keys will also be present:
@@ -178,5 +190,4 @@ With RSS, the only two keys that would be there no matter what are `entry_id` an
 
 ## Authors
 
-* **Oleg Larkin** - *Initial work* - 
-[krabique48](https://github.com/krabique48) (krabique48@gmail.com)
+* **Oleg Larkin** - *Initial work* - [krabique48](https://github.com/krabique48) (krabique48@gmail.com)
