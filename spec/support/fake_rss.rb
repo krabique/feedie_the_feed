@@ -5,7 +5,7 @@ class FakeRSS < Sinatra::Base
   # https://raw.githubusercontent.com
   get '/krabique48/feedie_the_feed/master/rss_test_sample' do
     # https://www.facebook.com/PokerGP
-    json_response 200, 'rss_page.json'
+    json_response 200, 'rss_page.xml'
   end
 
   private
