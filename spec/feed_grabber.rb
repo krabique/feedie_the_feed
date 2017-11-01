@@ -2,6 +2,8 @@ require 'simplecov'
 
 require 'feedie_the_feed'
 
+require 'spec_helper'
+
 # rubocop:disable Metrics/BlockLength
 describe FeedieTheFeed::FeedGrabber do
   context 'When testing the FeedGrabber class' do
@@ -232,7 +234,7 @@ describe FeedieTheFeed::FeedGrabber do
     it 'should raise FeedieTheFeed::BadUrl exception when we call the get ' \
       'instance method with a URL link that does not contain a feed' do
       @feed_grabber = FeedieTheFeed::FeedGrabber.new
-      links = ['http://google.com', 'http://google.com/']
+      links = ['https://google.com', 'http://google.com/']
       links.each do |link|
         expect do
           @feed_grabber.get(link)
