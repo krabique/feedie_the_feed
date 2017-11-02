@@ -18,7 +18,7 @@ describe FeedieTheFeed::FeedGrabber do
     end
 
     context 'with Facebook pages' do
-      facebook_page = 'https://www.facebook.com/PokerGP'
+      facebook_page = 'https://www.facebook.com/ruby.programming'
       facebook_appid = ENV['FACEBOOK_APPID']
       facebook_secret = ENV['FACEBOOK_SECRET']
 
@@ -93,7 +93,7 @@ describe FeedieTheFeed::FeedGrabber do
           expect do
             @feed_grabber = FeedieTheFeed::FeedGrabber.new
             # Some non-existent page
-            facebook_page = 'https://www.facebook.com/nrtsrns'
+            facebook_page = 'https://www.facebook.com/not_existing_page'
             @feed_grabber.get(facebook_page)
           end.to raise_error(FeedieTheFeed::BadFacebookPageName)
         end
@@ -207,12 +207,12 @@ describe FeedieTheFeed::FeedGrabber do
         facebook_secret: '123'
       )
       expect do
-        @feed_grabber.get('https://www.facebook.com/PokerGP')
+        @feed_grabber.get('https://www.facebook.com/ruby.programming')
       end.to raise_error(FeedieTheFeed::FacebookAuthorisationError)
 
       @feed_grabber = FeedieTheFeed::FeedGrabber.new
       expect do
-        @feed_grabber.get('https://www.facebook.com/PokerGP',
+        @feed_grabber.get('https://www.facebook.com/ruby.programming',
                           facebook_appid: '123',
                           facebook_secret: '123')
       end.to raise_error(FeedieTheFeed::FacebookAuthorisationError)
@@ -286,7 +286,7 @@ describe FeedieTheFeed::FeedGrabber do
       'calling the get instance method with a non integer ' \
       'limit value or a value ' \
       'that is not in range of 1 to 100 as the Facebook posts limit' do
-      facebook_page = 'https://www.facebook.com/PokerGP'
+      facebook_page = 'https://www.facebook.com/ruby.programming'
       expect do
         @feed_grabber = FeedieTheFeed::FeedGrabber.new
         @feed_grabber.get(facebook_page, facebook_posts_limit: 0)
@@ -324,15 +324,15 @@ describe FeedieTheFeed::FeedGrabber do
       "'https://www.facebook.com/abc'" do
       @feed_grabber = FeedieTheFeed::FeedGrabber.new
 
-      facebook_page = 'https://www.facebook.com/PokerGP'
+      facebook_page = 'https://www.facebook.com/ruby.programming'
       feed = @feed_grabber.get(facebook_page)
       expect(feed).to be_truthy
 
-      facebook_page = 'http://www.facebook.com/PokerGP'
+      facebook_page = 'http://www.facebook.com/ruby.programming'
       feed = @feed_grabber.get(facebook_page)
       expect(feed).to be_truthy
 
-      facebook_page = 'www.facebook.com/PokerGP'
+      facebook_page = 'www.facebook.com/ruby.programming'
       feed = @feed_grabber.get(facebook_page)
       expect(feed).to be_truthy
     end

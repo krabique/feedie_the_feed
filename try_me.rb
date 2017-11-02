@@ -1,6 +1,6 @@
 require 'feedie_the_feed'
 
-links_fb =  ['https://www.facebook.com/PokerGP',
+links_fb =  ['https://www.facebook.com/ruby.programming',
              'https://www.facebook.com/leagueoflegends/',
              'https://www.facebook.com/Defense0fTheAncients/']
 

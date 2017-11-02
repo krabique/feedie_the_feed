@@ -1,7 +1,7 @@
 require 'sinatra/base'
 
 class FakeFacebook < Sinatra::Base
-  get '/PokerGP' do
+  get '/ruby.programming' do
     json_response 200, 'facebook_page.json'
   end
 
@@ -9,7 +9,7 @@ class FakeFacebook < Sinatra::Base
     json_response 190, 'unvalid_facebook_credentials.json'
   end
 
-  get '/nrtsrns' do
+  get '/not_existing_page' do
     json_response 200, 'unvalid_facebook_page.json'
   end
 

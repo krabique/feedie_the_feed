@@ -73,7 +73,7 @@ To use the gem with Facebook you'll have to use your Facebook AppID and Facebook
 
 ```
 @feed_grabber = FeedieTheFeed::FeedGrabber.new
-@feed_grabber.get('https://www.facebook.com/PokerGP')
+@feed_grabber.get('https://www.facebook.com/ruby.programming')
 ```
 
 #### Facebook credentials priorities
@@ -89,7 +89,7 @@ So, you can also provide the Facebook credentials as parameters in the get metho
 ```
 @feed_grabber = FeedieTheFeed::FeedGrabber.new
 @feed_grabber.get(
-  'https://www.facebook.com/PokerGP',
+  'https://www.facebook.com/ruby.programming',
   facebook_appid: '123',
   facebook_secret: '123'
 )
@@ -102,7 +102,7 @@ Or during object creation:
   facebook_appid: '123',
   facebook_secret: '123'
 )
-@feed_grabber.get('https://www.facebook.com/PokerGP')
+@feed_grabber.get('https://www.facebook.com/ruby.programming')
 ```
 
 #### Facebook posts limit
