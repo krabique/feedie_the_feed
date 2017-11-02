@@ -10,7 +10,8 @@ RSpec.configure do |config|
     stub_request(:post, %r{graph.facebook.com/oauth/access_token})
       .to_return(status: 200)
     stub_request(:post, %r{graph.facebook.com/oauth/access_token})
-      .with(body: { 'client_id' => '123', 'client_secret' => '123',
+      .with(body: { 'client_id' => '123',
+                    'client_secret' => '123',
                     'grant_type' => 'client_credentials' })
       .to_rack(FakeFacebook)
     stub_request(:get, /rss_test_sample/).to_rack(FakeRSS)
