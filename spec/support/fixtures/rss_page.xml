@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?>
+  <?xml-stylesheet type="text/css" media="screen" href="http://rss.cnn.com/~d/styles/itemcontent.css"?>
+    <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0"
+      version="2.0">
+      <channel>
+        <title>
+          <![CDATA[CNN.com - RSS Channel - World]]>
+        </title>
+        <description>
+          <![CDATA[CNN.com delivers up-to-the-minute news and information on the latest top stories, weather, entertainment, politics and more.]]>
+        </description>
+        <link>http://www.cnn.com/world/index.html</link>
+        <image>
+          <url>http://i2.cdn.turner.com/cnn/2015/images/09/24/cnn.digital.png</url>
+          <title>CNN.com - RSS Channel - World</title>
+          <link>http://www.cnn.com/world/index.html</link>
+        </image>
+        <generator>coredev-bumblebee</generator>
+        <lastBuildDate>Tue, 24 Oct 2017 22:22:43 GMT</lastBuildDate>
+        <pubDate>Tue, 24 Oct 2017 00:43:57 GMT</pubDate>
+        <copyright>
+          <![CDATA[Copyright (c) 2017 Turner Broadcasting System, Inc. All Rights Reserved.]]>
+        </copyright>
+        <language>
+          <![CDATA[en-US]]>
+        </language>
+        <ttl>10</ttl>
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://rss.cnn.com/rss/edition_world" />
+        <feedburner:info uri="rss/edition_world" />
+        <atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" />
+        <item>
+          <title>
+            <![CDATA[Japanese PM hails landslide victory in snap election]]>
+          </title>
+          <description>A decision by Japanese Prime Minister Shinzo Abe to call a snap election appears to have paid off.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/-KsvBM5ukTE" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/-KsvBM5ukTE/index.html</link>
+          <guid isPermaLink="false">http://www.cnn.com/2017/10/22/asia/japan-election-results/index.html</guid>
+          <pubDate>Mon, 23 Oct 2017 13:21:22 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022122219-shinzo-abe-japan-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/2017/10/22/asia/japan-election-results/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[Polls open in Japan's snap general election]]>
+          </title>
+          <description>Japanese voters are casting their ballots in a snap general election. CNN's Natalie Allen speaks with journalist Kaori Enjoji for the details.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/NPqeRUr82Qw" height="1" width="1"
+            alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/NPqeRUr82Qw/japan-snap-general-election.cnn</link>
+          <guid isPermaLink="false">http://www.cnn.com/videos/world/2017/10/22/japan-snap-general-election.cnn</guid>
+          <pubDate>Sun, 22 Oct 2017 06:57:31 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171022022742-japan-snap-general-election-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/videos/world/2017/10/22/japan-snap-general-election.cnn</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[Outsider party looks to upstage Japan's Abe]]>
+          </title>
+          <description>Japanese politicians spring into campaign mode Tuesday as the countdown to the country's snap general election -- scheduled for October 22 -- begins.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/NOPfiBAHMSQ" height="1" width="1"
+            alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/NOPfiBAHMSQ/index.html</link>
+          <guid isPermaLink="false">http://www.cnn.com/2017/10/09/asia/japan-election-campaigning-begins/index.html</guid>
+          <pubDate>Tue, 10 Oct 2017 02:32:59 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171010090542-shinzo-abe-snap-election-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/2017/10/09/asia/japan-election-campaigning-begins/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[Japanese leader calls for early election]]>
+          </title>
+          <description>Japanese leader Shinzo Abe has called an early election to take advantage of higher opinion polls to secure a stronger mandate as the country prepares to respond to increasing threats from North Korea.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/ZIF6LblAha8"
+            height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/ZIF6LblAha8/index.html</link>
+          <guid isPermaLink="false">http://www.cnn.com/2017/09/25/asia/japan-snap-election/index.html</guid>
+          <pubDate>Mon, 25 Sep 2017 11:05:49 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727211922-shinzo-abe-july-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/2017/09/25/asia/japan-snap-election/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[Puerto Rico wants Amazon's second headquarters, too]]>
+          </title>
+          <description>Virtually every city and state in North America wants to host Amazon's second headquarters. That includes Puerto Rico.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/okbxp95t-ss" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/okbxp95t-ss/index.html</link>
+          <guid isPermaLink="false">http://money.cnn.com/2017/10/23/technology/puerto-rico-amazon-bid/index.html</guid>
+          <pubDate>Mon, 23 Oct 2017 23:23:59 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023193456-amazon-puerto-rico-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://money.cnn.com/2017/10/23/technology/puerto-rico-amazon-bid/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[Millennials are shaking up these 7 industries]]>
+          </title>
+          <description>Millennials tend to be more entrepreneurial than previous generations, studies suggest. And some have already created businesses that are shaking up age-old industries.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/TGDARx2LBek"
+            height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/TGDARx2LBek/index.html</link>
+          <guid isPermaLink="false">http://money.cnn.com/gallery/news/2017/10/23/fresh-money-millennial-innovators/index.html</guid>
+          <pubDate>Tue, 24 Oct 2017 12:53:55 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171023093427-cnnmoneyfreshmoneyceo-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://money.cnn.com/gallery/news/2017/10/23/fresh-money-millennial-innovators/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[Bill O'Reilly 'mad at God' over allegations]]>
+          </title>
+          <description>Bill O'Reilly claims The New York Times' latest bombshell is just "another smear article" against him. But he has not disputed the facts surrounding his $32 million settlement with longtime Fox News colleague Lis Wiehl, who was a legal analyst
+            for the network.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/MLVpyO8Bd2o" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/MLVpyO8Bd2o/index.html</link>
+          <guid isPermaLink="false">http://money.cnn.com/2017/10/23/media/bill-oreilly-misconduct-allegations/index.html</guid>
+          <pubDate>Tue, 24 Oct 2017 15:11:36 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170420025636-bill-oreilly-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://money.cnn.com/2017/10/23/media/bill-oreilly-misconduct-allegations/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[China lifts ban on stinky cheese imports]]>
+          </title>
+          <description>China has lifted a ban on imports of soft cheeses such as Roquefort, Gorgonzola and Stilton.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/maCi1Qinbeg" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/maCi1Qinbeg/index.html</link>
+          <guid isPermaLink="false">http://money.cnn.com/2017/10/23/news/china-cheese-ban-import/index.html</guid>
+          <pubDate>Mon, 23 Oct 2017 15:36:11 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170908080012-cnnmoneycheese-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://money.cnn.com/2017/10/23/news/china-cheese-ban-import/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[Jeff Bezos is standing on top of the world]]>
+          </title>
+          <description>One year ago, Jeff Bezos's future seemed uncertain.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/jLwgRWw91Lg" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/jLwgRWw91Lg/index.html</link>
+          <guid isPermaLink="false">http://money.cnn.com/2017/10/20/technology/business/jeff-bezos-moment/index.html</guid>
+          <pubDate>Fri, 20 Oct 2017 19:33:45 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170727141609-jeff-bezos-worlds-wealthiest-man-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://money.cnn.com/2017/10/20/technology/business/jeff-bezos-moment/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[How a month of hurricane nightmares changed Puerto Rico --  and me]]>
+          </title>
+          <description>I am writing this in the dark. The hotel doesn't have power, and one of the generators failed. I had to walk up 10 flights of stairs to get to my hotel room because the elevators don't work. The lights have been flickering all night.&lt;img
+            src="http://feeds.feedburner.com/~r/rss/edition_world/~4/hObwwsyyCzc" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/hObwwsyyCzc/index.html</link>
+          <guid isPermaLink="false">http://www.cnn.com/2017/10/20/us/puerto-rico-one-month-santiago/index.html</guid>
+          <pubDate>Sat, 21 Oct 2017 23:56:25 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-super-169.jpeg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-large-11.jpeg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-vertical-large-gallery.jpeg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-video-synd-2.jpeg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-live-video.jpeg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-t1-main.jpeg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-vertical-gallery.jpeg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-story-body.jpeg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-t1-main.jpeg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-assign.jpeg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170925200627-santiago-puerto-rico-dnt-screengrab-hp-video.jpeg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/2017/10/20/us/puerto-rico-one-month-santiago/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[Quebec bars people with face coverings from getting public services]]>
+          </title>
+          <description>Quebec's lawmakers passed a bill Wednesday that would require public workers and citizens seeking government services to have their faces uncovered.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/S5FC9ZXM0Jg" height="1" width="1"
+            alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/S5FC9ZXM0Jg/index.html</link>
+          <guid isPermaLink="false">http://www.cnn.com/2017/10/19/americas/quebec-face-covering-bill/index.html</guid>
+          <pubDate>Thu, 19 Oct 2017 06:04:47 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/160811111510-01-muslim-headscarves-explainer-niqab-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/2017/10/19/americas/quebec-face-covering-bill/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[About 1 million Americans without running water. 3 million without power. This is life one month after Hurricane Maria.]]>
+          </title>
+          <description>After Hurricane Maria toppled the bridge that connects him to the rest of civilization and ripped the roof and walls off his house here in the central mountains of Puerto Rico, Ramón Sostre raised a weathered American flag above the wreckage.&lt;img
+            src="http://feeds.feedburner.com/~r/rss/edition_world/~4/EeHWDZeEGq4" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/EeHWDZeEGq4/index.html</link>
+          <guid isPermaLink="false">http://www.cnn.com/2017/10/18/health/puerto-rico-one-month-without-water/index.html</guid>
+          <pubDate>Fri, 20 Oct 2017 19:11:51 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171018101955-03-puerto-rico-one-month-later-1018-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/2017/10/18/health/puerto-rico-one-month-without-water/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[A better library can change a child's life]]>
+          </title>
+          <description>In 1999, Rebecca Constantino began doing a study at schools across Los Angeles.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/-Y6oYZibTOw" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/-Y6oYZibTOw/index.html</link>
+          <guid isPermaLink="false">http://www.cnn.com/2017/10/19/us/cnn-hero-rebecca-constantino-access-books/index.html</guid>
+          <pubDate>Thu, 19 Oct 2017 19:22:08 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019121512-cnn-hero-rebecca-constantino-pkg-00020715-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/2017/10/19/us/cnn-hero-rebecca-constantino-access-books/index.html</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[She gives book collections a boost]]>
+          </title>
+          <description>Rebecca Constantino's nonprofit, Access Books, provides books and refurbishes libraries for low-income schools across California.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/TeFfM4OLiPw" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/TeFfM4OLiPw/cnn-hero-rebecca-constantino-pkg.cnn</link>
+          <guid isPermaLink="false">http://www.cnn.com/videos/us/2017/10/19/cnn-hero-rebecca-constantino-pkg.cnn</guid>
+          <pubDate>Thu, 19 Oct 2017 16:20:26 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-super-169.jpg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-large-11.jpg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-vertical-large-gallery.jpg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-video-synd-2.jpg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-live-video.jpg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-vertical-gallery.jpg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-story-body.jpg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-t1-main.jpg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-assign.jpg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/171019143059-cnn-hero-rebecca-constantino-hp-video.jpg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/videos/us/2017/10/19/cnn-hero-rebecca-constantino-pkg.cnn</feedburner:origLink>
+        </item>
+        <item>
+          <title>
+            <![CDATA[Helping at-risk youth tell their stories]]>
+          </title>
+          <description>Several times a week, a security officer lets Harry Grammer through the gates of Camp Gonzales, a juvenile detention center in Los Angeles.&lt;img src="http://feeds.feedburner.com/~r/rss/edition_world/~4/yB2tpx4nTEk" height="1" width="1" alt=""/&gt;</description>
+          <link>http://rss.cnn.com/~r/rss/edition_world/~3/yB2tpx4nTEk/index.html</link>
+          <guid isPermaLink="false">http://www.cnn.com/2017/07/13/health/cnn-hero-harry-grammer/index.html</guid>
+          <pubDate>Fri, 14 Jul 2017 18:16:18 GMT</pubDate>
+          <media:group>
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-super-169.jpeg" height="619" width="1100" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-large-11.jpeg" height="300" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-vertical-large-gallery.jpeg" height="552" width="414" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-video-synd-2.jpeg" height="480" width="640" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-live-video.jpeg" height="324" width="576" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-t1-main.jpeg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-vertical-gallery.jpeg" height="360" width="270" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-story-body.jpeg" height="169" width="300" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-t1-main.jpeg" height="250" width="250" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-assign.jpeg" height="186" width="248" />
+            <media:content medium="image" url="http://i2.cdn.turner.com/cnnnext/dam/assets/170713153830-cnn-hero-harry-grammer-hp-video.jpeg" height="144" width="256" /></media:group>
+          <feedburner:origLink>http://www.cnn.com/2017/07/13/health/cnn-hero-harry-grammer/index.html</feedburner:origLink>
+        </item>
+      </channel>
+    </rss>

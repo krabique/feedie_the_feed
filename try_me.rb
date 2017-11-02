@@ -1,6 +1,6 @@
 require 'feedie_the_feed'
 
-links_fb =  ['https://www.facebook.com/PokerGP',
+links_fb =  ['https://www.facebook.com/ruby.programming',
              'https://www.facebook.com/leagueoflegends/',
              'https://www.facebook.com/Defense0fTheAncients/']
 
@@ -18,6 +18,7 @@ options = {
 
 @feed_grabber = FeedieTheFeed::FeedGrabber.new
 
+# rubocop:disable Metrics/AbcSize
 def get_feed(links, options = {})
   links.each do |link|
     f = @feed_grabber.get(link, options)
