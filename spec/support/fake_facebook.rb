@@ -1,20 +1,18 @@
 require 'sinatra/base'
 
 class FakeFacebook < Sinatra::Base
-  # get '/repos/:organization/:project/contributors' do
   get '/PokerGP' do
-    # https://www.facebook.com/PokerGP
     json_response 200, 'facebook_page.json'
   end
-  
+
   get '/oauth/access_token' do
     json_response 190, 'unvalid_facebook_credentials.json'
   end
-  
+
   get '/nrtsrns' do
     json_response 200, 'unvalid_facebook_page.json'
   end
-  
+
   private
 
   def json_response(response_code, file_name)

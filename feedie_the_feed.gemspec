@@ -19,12 +19,13 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'feedjira',      '~> 2.1'
   s.add_dependency 'koala',         '~> 3.0'
-  s.add_dependency 'public_suffix', '~> 3.0'
   s.add_dependency 'nesty',         '~> 1.0'
+  s.add_dependency 'public_suffix', '~> 3.0'
 
-  s.add_development_dependency 'rspec', '~> 3.7'
-  s.add_development_dependency 'simplecov', '~> 0.15'
   s.add_development_dependency 'rake', '~> 12.2'
-  s.add_development_dependency 'webmock', '~> 3.1'
+  s.add_development_dependency 'rspec', '~> 3.7'
+  s.add_development_dependency 'rubocop', '~> 0.51'
+  s.add_development_dependency 'simplecov', '~> 0.15'
   s.add_development_dependency 'sinatra', '~> 2.0'
+  s.add_development_dependency 'webmock', '~> 3.1'
 end

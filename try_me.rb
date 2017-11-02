@@ -18,6 +18,7 @@ options = {
 
 @feed_grabber = FeedieTheFeed::FeedGrabber.new
 
+# rubocop:disable Metrics/AbcSize
 def get_feed(links, options = {})
   links.each do |link|
     f = @feed_grabber.get(link, options)
