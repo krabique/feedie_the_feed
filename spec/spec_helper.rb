@@ -3,6 +3,9 @@ require 'webmock/rspec'
 require 'support/fake_facebook'
 require 'support/fake_rss'
 
+ENV['FACEBOOK_APPID'] = '123456'
+ENV['FACEBOOK_SECRET'] = '456789'
+
 WebMock.disable_net_connect!(allow_localhost: true)
 
 RSpec.configure do |config|

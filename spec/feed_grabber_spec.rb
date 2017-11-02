@@ -6,9 +6,6 @@ require 'spec_helper'
 
 # rubocop:disable Metrics/BlockLength
 describe FeedieTheFeed::FeedGrabber do
-  ENV['FACEBOOK_APPID'] = '123456'
-  ENV['FACEBOOK_SECRET'] = '456789'
-
   context 'When testing the FeedGrabber class' do
     it 'should set @facebook_posts_limit_global to the given limit ' \
       'value when we call the fb_posts_limit(limit) method' do
@@ -25,81 +22,79 @@ describe FeedieTheFeed::FeedGrabber do
       facebook_appid = ENV['FACEBOOK_APPID']
       facebook_secret = ENV['FACEBOOK_SECRET']
 
-      if facebook_appid && facebook_secret
-        it 'should return feed when we call the get instance method ' \
-          'with Facebook credentials included in the call' do
+      it 'should return feed when we call the get instance method ' \
+        'with Facebook credentials included in the call' do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new
+        f = @feed_grabber.get(
+          facebook_page,
+          facebook_appid: facebook_appid,
+          facebook_secret: facebook_secret
+        )
+        expect(f).to be_truthy
+      end
+
+      it 'should return feed when we call the get instance method ' \
+        "with Facebook credentials provided through the object's " \
+        'global values' do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+          facebook_appid: facebook_appid,
+          facebook_secret: facebook_secret
+        )
+        f = @feed_grabber.get(facebook_page)
+        expect(f).to be_truthy
+      end
+
+      it 'should return feed when we call the get instance method ' \
+        'with Facebook credentials not included anywhere, and thus provided' \
+        'by the environment variables FACEBOOK_APPID and FACEBOOK_SECRET' do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new
+        f = @feed_grabber.get(facebook_page)
+        expect(f).to be_truthy
+      end
+
+      it 'should return feed when we call the get instance method with ' \
+        'Facebook credentials as parameters, even if Facebook credentials ' \
+        'have already been ' \
+        'provided on class instance creation' do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+          facebook_appid: '123',
+          facebook_secret: '123'
+        )
+        f = @feed_grabber.get(
+          facebook_page,
+          facebook_appid: facebook_appid,
+          facebook_secret: facebook_secret
+        )
+        expect(f).to be_truthy
+      end
+
+      it 'should return an array of hashes with certain keys when we ' \
+        'use the get instance method' do
+        @feed_grabber = FeedieTheFeed::FeedGrabber.new
+        feed = @feed_grabber.get(facebook_page)
+
+        expect(feed).to be_a(Array)
+        feed.each do |entry|
+          expect(entry).to be_a(Hash)
+
+          expect(entry).to have_key('entry_id')
+          expect(entry).to have_key('title')
+          expect(entry).to have_key('summary')
+          expect(entry).to have_key('url')
+          expect(entry).to have_key('published')
+          expect(entry).to have_key('image')
+        end
+      end
+
+      it 'should raise FeedieTheFeed::BadFacebookPageName exception when ' \
+        'we are trying to call the get instance method with a unvalid ' \
+        'Facebook page name' do
+        expect do
           @feed_grabber = FeedieTheFeed::FeedGrabber.new
-          f = @feed_grabber.get(
-            facebook_page,
-            facebook_appid: facebook_appid,
-            facebook_secret: facebook_secret
-          )
-          expect(f).to be_truthy
-        end
-
-        it 'should return feed when we call the get instance method ' \
-          "with Facebook credentials provided through the object's " \
-          'global values' do
-          @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-            facebook_appid: facebook_appid,
-            facebook_secret: facebook_secret
-          )
-          f = @feed_grabber.get(facebook_page)
-          expect(f).to be_truthy
-        end
-
-        it 'should return feed when we call the get instance method ' \
-          'with Facebook credentials not included anywhere, and thus provided' \
-          'by the environment variables FACEBOOK_APPID and FACEBOOK_SECRET' do
-          @feed_grabber = FeedieTheFeed::FeedGrabber.new
-          f = @feed_grabber.get(facebook_page)
-          expect(f).to be_truthy
-        end
-
-        it 'should return feed when we call the get instance method with ' \
-          'Facebook credentials as parameters, even if Facebook credentials ' \
-          'have already been ' \
-          'provided on class instance creation' do
-          @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-            facebook_appid: '123',
-            facebook_secret: '123'
-          )
-          f = @feed_grabber.get(
-            facebook_page,
-            facebook_appid: facebook_appid,
-            facebook_secret: facebook_secret
-          )
-          expect(f).to be_truthy
-        end
-
-        it 'should return an array of hashes with certain keys when we ' \
-          'use the get instance method' do
-          @feed_grabber = FeedieTheFeed::FeedGrabber.new
-          feed = @feed_grabber.get(facebook_page)
-
-          expect(feed).to be_a(Array)
-          feed.each do |entry|
-            expect(entry).to be_a(Hash)
-
-            expect(entry).to have_key('entry_id')
-            expect(entry).to have_key('title')
-            expect(entry).to have_key('summary')
-            expect(entry).to have_key('url')
-            expect(entry).to have_key('published')
-            expect(entry).to have_key('image')
-          end
-        end
-
-        it 'should raise FeedieTheFeed::BadFacebookPageName exception when ' \
-          'we are trying to call the get instance method with a unvalid ' \
-          'Facebook page name' do
-          expect do
-            @feed_grabber = FeedieTheFeed::FeedGrabber.new
-            # Some non-existent page
-            facebook_page = 'https://www.facebook.com/not_existing_page'
-            @feed_grabber.get(facebook_page)
-          end.to raise_error(FeedieTheFeed::BadFacebookPageName)
-        end
+          # Some non-existent page
+          facebook_page = 'https://www.facebook.com/not_existing_page'
+          @feed_grabber.get(facebook_page)
+        end.to raise_error(FeedieTheFeed::BadFacebookPageName)
       end
     end
 
