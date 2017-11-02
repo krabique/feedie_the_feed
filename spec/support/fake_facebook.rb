@@ -7,6 +7,10 @@ class FakeFacebook < Sinatra::Base
     json_response 200, 'facebook_page.json'
   end
   
+  get '/oauth/access_token' do
+    json_response 190, 'unvalid_facebook_credentials.json'
+  end
+  
   get '/nrtsrns' do
     json_response 200, 'unvalid_facebook_page.json'
   end
