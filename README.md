@@ -31,10 +31,10 @@ git clone git@github.com:krabique48/feedie_the_feed.git
 
 ### Running the tests
 
-Just run RSpec and watch it go green! But you'll have to clone the repo for that, since tests aren't included in the gem. Also, **make sure you have FACEBOOK_APPID and FACEBOOK_SECRET environment variables set**.
+Just run rake and watch it go green for RSpec and RuboCop!
 
 ```
-rspec spec/*
+rake
 ```
 
 ### Documentation

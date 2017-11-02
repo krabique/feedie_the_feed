@@ -6,6 +6,9 @@ require 'spec_helper'
 
 # rubocop:disable Metrics/BlockLength
 describe FeedieTheFeed::FeedGrabber do
+  ENV['FACEBOOK_APPID'] = '123456'
+  ENV['FACEBOOK_SECRET'] = '456789'
+
   context 'When testing the FeedGrabber class' do
     it 'should set @facebook_posts_limit_global to the given limit ' \
       'value when we call the fb_posts_limit(limit) method' do
