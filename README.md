@@ -76,6 +76,16 @@ To use the gem with Facebook you'll have to use your Facebook AppID and Facebook
 @feed_grabber.get('https://www.facebook.com/ruby.programming')
 ```
 
+### Module method
+
+You can also do this, without explicitly creating an object, as a shortcut.
+
+```
+FeedieTheFeed.get('https://www.facebook.com/ruby.programming')
+```
+
+It acts just like as if you have created a FeedieTheFeed::FeedGrabber instance, and called it's get instance method.
+
 #### Facebook credentials priorities
 
 Facebook AppID and secret key follow a priority rule:
