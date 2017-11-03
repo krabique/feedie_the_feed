@@ -18,16 +18,10 @@ options = {
 
 @feed_grabber = FeedieTheFeed::FeedGrabber.new
 
-# rubocop:disable Metrics/AbcSize
 def get_feed(links, options = {})
   links.each do |link|
-    f = @feed_grabber.get(link, options)
-    p 'entry_id: '  + f.first['entry_id']
-    p 'title: '     + f.first['title'] if f.first['title']
-    p 'summary: '   + f.first['summary'] if f.first['summary']
-    p 'url: '       + f.first['url']
-    p 'published: ' + f.first['published'].to_s if f.first['published']
-    p 'image: '     + f.first['image'] if f.first['image']
+    feed = @feed_grabber.get(link, options)
+    feed.first.each { |v| p v }
     p '----------------------------------'
   end
 end
