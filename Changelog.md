@@ -1,3 +1,9 @@
+### 0.3.1 / 2017-11-03
+
+Bugs:
+
+* Fix an exception raised when there is no `'summary'` provided for a Facebook post
+
 ### 0.3.0 / 2017-11-02
 
 Enhancements:
