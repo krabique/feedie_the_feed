@@ -1,3 +1,9 @@
+### 0.3.2 / 2017-11-03
+
+Bugs:
+
+* Fixed wrong changelog address
+
 ### 0.3.1 / 2017-11-03
 
 Bugs:
