@@ -73,7 +73,7 @@ module FeedieTheFeed
     def formalize_fb_feed_array(array)
       array.each do |hash|
         hash['entry_id'] = hash.delete('id')
-        hash['summary'] = hash.delete('message')
+        hash['summary'] = hash.delete('message') if hash['message']
         hash['title'] = hash['summary'].truncate(80) if hash['summary']
         hash['url'] = hash.delete('link')
         hash['published'] = Time.parse(hash.delete('created_time'))

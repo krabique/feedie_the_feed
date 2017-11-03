@@ -72,7 +72,6 @@ describe FeedieTheFeed::FeedGrabber do
         'use the get instance method' do
         @feed_grabber = FeedieTheFeed::FeedGrabber.new
         feed = @feed_grabber.get(facebook_page)
-
         expect(feed).to be_a(Array)
         feed.each do |entry|
           expect(entry).to be_a(Hash)
@@ -99,8 +98,7 @@ describe FeedieTheFeed::FeedGrabber do
     end
 
     context 'with RSS feed' do
-      rss_feed = 'https://raw.githubusercontent.com/krabique48/' \
-                 'feedie_the_feed/master/rss_test_sample'
+      rss_feed = 'https://abc.com/rss'
 
       it 'should return feed when we use the get instance method' do
         @feed_grabber = FeedieTheFeed::FeedGrabber.new
@@ -109,7 +107,7 @@ describe FeedieTheFeed::FeedGrabber do
       end
 
       it 'should return an array of hashes with certain keys when we ' \
-          'use the get instance method' do
+        'use the get instance method' do
         @feed_grabber = FeedieTheFeed::FeedGrabber.new
         feed = @feed_grabber.get(rss_feed)
 

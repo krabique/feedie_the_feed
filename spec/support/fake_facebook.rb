@@ -1,7 +1,7 @@
 require 'sinatra/base'
 
 class FakeFacebook < Sinatra::Base
-  get '/ruby.programming' do
+  get '/ruby.programming/posts' do
     json_response 200, 'facebook_page.json'
   end
 

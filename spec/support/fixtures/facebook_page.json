@@ -1,151 +1,295 @@
 {
-  "posts": {
-    "data": [
+   "data": [
       {
-        "message": "No costume needed to party with us at GamePoint! 👯‍♀ 🎁Join today's Giveaway to win a $500 Amazon gift, Coins and Memberships!
-
-LIKE if you'll be at the best Halloween party 🎃 bit.ly/GPPoker",
-        "id": "271833512869969_1479954018724573",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "photo",
-        "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/p130x130/22815443_1479953468724628_5871848151573803795_n.jpg?oh=acfb09f80b8651194e7e400685a2d972&oe=5AA90F7D",
-        "link": "https://www.facebook.com/ruby.programming/photos/a.272991772754143.75135.271833512869969/1479953468724628/?type=3",
-        "created_time": "2017-10-31T17:15:02+0000"
+         "message": "Algorithms (gem) in ruby \n\n\"...\nCOMPLETED:\n\n* Heaps              Containers::Heap, Containers::MaxHeap, Containers::MinHeap\n* Priority Queue     Containers::PriorityQueue\n* Deque              Containers::Deque, Containers::CDeque (C ext)\n* Stack              Containers::Stack\n* Queue              Containers::Queue\n* Red-Black Trees    Containers::RBTreeMap, Containers::CRBTreeMap (C ext)\n* Splay Trees        Containers::SplayTreeMap, Containers::CSplayTreeMap (C ext)\n* Tries              Containers::Trie\n* Suffix Array       Containers::SuffixArray\n\n* Search algorithms\n  - Binary Search            Algorithms::Search.binary_search\n  - Knuth-Morris-Pratt       Algorithms::Search.kmp_search\n* Sorting algorithms           \n  - Bubble sort              Algorithms::Sort.bubble_sort\n  - Comb sort                Algorithms::Sort.comb_sort\n  - Selection sort           Algorithms::Sort.selection_sort\n  - Heapsort                 Algorithms::Sort.heapsort\n  - Insertion sort           Algorithms::Sort.insertion_sort\n  - Shell sort               Algorithms::Sort.shell_sort\n  - Quicksort                Algorithms::Sort.quicksort\n  - Mergesort                Algorithms::Sort.mergesort\n  - Dual-Pivot Quicksort     Algorithms::Sort.dualpivotquicksort\"\n\nhttps://github.com/kanwei/algorithms",
+         "id": "1900757616805828_1947838018764454",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "picture": "https://external.xx.fbcdn.net/safe_image.php?d=AQCCGQBfrnsR2OKG&w=130&h=130&url=https\u00253A\u00252F\u00252Favatars3.githubusercontent.com\u00252Fu\u00252F16632\u00253Fv\u00253D3\u002526s\u00253D400&cfs=1&sx=0&sy=0&sw=400&sh=400&_nc_hash=AQAGV9dEYXVxqDlJ",
+         "link": "https://github.com/kanwei/algorithms",
+         "created_time": "2017-11-03T01:26:14+0000"
       },
       {
-        "message": "What will your Halloween costume be? 🧟‍♀
-Let us know and come trick or treating with us!
-Play -> http://bit.ly/GPPoker",
-        "id": "271833512869969_1474620575924584",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "photo",
-        "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/p130x130/22552745_1474617149258260_8372045521994098761_n.jpg?oh=9653b488e057a2c0eaa9bcd55c9a0db3&oe=5AA7258A",
-        "link": "https://www.facebook.com/ruby.programming/photos/a.272991772754143.75135.271833512869969/1474617149258260/?type=3",
-        "created_time": "2017-10-29T15:36:00+0000"
+         "message": "You will need to use gems. gemguide is useful\n\nhttp://guides.rubygems.org/",
+         "id": "1900757616805828_1947019765512946",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "picture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/19905276_1901074306774159_8899017479450411344_n.jpg?oh=013bc73d3f098411b4c54d78d698910f&oe=5A6689E9",
+         "link": "http://guides.rubygems.org/",
+         "created_time": "2017-11-01T07:25:41+0000"
       },
       {
-        "message": "Come for spooks and our Monstrous Giveaway on 10/31 for treats like a $500 Amazon Gift card 🧛‍♀. Play daily to increase your chance to win!
-LIKE if you'll be there & come play NOW! -> http://bit.ly/GPPoker",
-        "id": "271833512869969_1475477615838880",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "photo",
-        "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/p130x130/22815447_1475476595838982_6353502013800137141_n.png?oh=ec7ab24634b6bacef447283be9760195&oe=5A720D36",
-        "link": "https://www.facebook.com/ruby.programming/photos/a.272991772754143.75135.271833512869969/1475476595838982/?type=3",
-        "created_time": "2017-10-27T16:46:00+0000"
+         "message": "Good series of tutorials\n\nhttps://www.tutorialspoint.com/ruby/",
+         "id": "1900757616805828_1946513758896880",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "https://www.tutorialspoint.com/ruby/",
+         "created_time": "2017-10-31T02:19:45+0000"
       },
       {
-        "message": "🎃 Halloween's at GamePoint! 🎃
-Join for Bingo in the Dark, Extra SuperBingos, Halloween Daubers & Cups and much more.
-Join us daily if you dare ➡ bit.ly/GPPoker",
-        "id": "271833512869969_1474554082597900",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "video",
-        "picture": "https://scontent.xx.fbcdn.net/v/t15.0-10/s130x130/22743545_1474556182597690_897345163511201792_n.jpg?oh=e39a54f08c08eca4a33cffb4cdea9982&oe=5AA78050",
-        "link": "https://www.facebook.com/ruby.programming/videos/1474554082597900/",
-        "created_time": "2017-10-26T16:46:00+0000"
+         "message": "One more #rake guide ... :)\n\nhttp://www.stuartellis.name/articles/rake/",
+         "id": "1900757616805828_1945456875669235",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "http://www.stuartellis.name/articles/rake/",
+         "created_time": "2017-10-28T15:36:03+0000"
       },
       {
-        "message": "Vote which way that leads out of the labyrinth and come play 🍁 bit.ly/GPPoker",
-        "id": "271833512869969_1468241606562481",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "photo",
-        "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/p130x130/22552589_1468239943229314_9122773177350780057_n.png?oh=89f81b95554a49297eb84f1407e90b4b&oe=5AA67D0F",
-        "link": "https://www.facebook.com/ruby.programming/photos/a.272991772754143.75135.271833512869969/1468239943229314/?type=3",
-        "created_time": "2017-10-22T17:45:00+0000"
+         "message": "Free book: The Art and Craft of Computer Programming (by Mark McIlroy)\n\n-----------------------------------------\nLink:\n\nhttp://www.markmcilroy.com/index.php?internaljump=true&screen_width=1366&screen_height=768\n-----------------------------------------\n\nContents\n\n1. Prelude 5\n2. Program Structure 6\n2.1. Procedural Languages 6\n2.2. Declarative Languages 17\n2.3. Other Languages 20\n3. Topics from Computer Science 21\n3.1. Execution Platforms 21\n3.2. Code Execution Models 26\n3.3. Data structures 29\n3.4. Algorithms 44\n3.5. Techniques 66\n3.6. Code Models 85\n3.7. Data Storage 100\n3.8. Numeric Calculations 116\n3.9. System Security 132\n3.10. Speed & Efficiency 136\n4. The Craft of Programming 157\n4.1. Programming Languages 157\n4.2. Development Environments 167\n4.3. System Design 170\n4.4. Software Component Models 180\n4.5. System Interfaces 184\n4.6. System Development 191 \n4.3. System Design 170\n4.4. Software Component Models 180\n4.5. System Interfaces 184\n4.6. System Development 191\n4.7. System evolution 210\n4.8. Code Design 217\n4.9. Coding 233\n4.10. Testing 262\n4.11. Debugging 275\n4.12. Documentation 285\n5. Appendix A - Summary of operators 286",
+         "id": "1900757616805828_1943367239211532",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "picture": "https://scontent.xx.fbcdn.net/v/t45.1600-4/c0.0.130.130/p130x130/22516790_6082517921537_938015042060681216_n.png?oh=53591f5dce451eb5a8a0322ad9013e96&oe=5A76C69C",
+         "link": "http://www.markmcilroy.com/index.php?internaljump=true&screen_width=1366&screen_height=768",
+         "created_time": "2017-10-23T15:50:59+0000"
       },
       {
-        "message": "Can you find all the Coins?
-
-LIKE if you found them and come play ⚱ bit.ly/GPPoker",
-        "id": "271833512869969_1468044789915496",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "photo",
-        "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/p130x130/22539965_1468043879915587_2507915639723628186_n.png?oh=e158acfd185e3f794c214a386f330a64&oe=5A783295",
-        "link": "https://www.facebook.com/ruby.programming/photos/a.272991772754143.75135.271833512869969/1468043879915587/?type=3",
-        "created_time": "2017-10-18T17:45:00+0000"
+         "message": "Ruby 2.5.0-preview1 Released\n\nPosted by naruse on 10 Oct 2017\n\nRuby 2.5.0-preview1 is the first preview release toward Ruby 2.5.0. It introduces some new features and performance improvements, for example:\n\nNew Features\nPrint backtrace and error message in reverse order if STDERR is unchanged and a tty. [Feature #8661] [experimental]\n\nTop-level constant look-up is removed. [Feature #11547]\n\nrescue/else/ensure are allowed inside do/end blocks. [Feature #12906]\n\nyield_self [Feature #6721]\n\nOther notable changes since 2.4\nMerge Onigmo to 6.1.1. It adds absent operator Note that Ruby 2.4.1 also includes this change.\nMerge bundler to standard libraries.\nMerge rubygems-2.6.13.\nMerge rdoc-6.0.0.beta2. Change lexer IRB based one to Ripper. It much improves the speed of generating document. https://github.com/ruby/rdoc/pull/512 This also includes\nFix so many bugs in the last dozen years or so\nSupport new Ruby syntaxes in the last several years\nUpdate supported Unicode version to 10.0.0.\nSee NEWS or commit logs for details.\n\nWith those changes, 6162 files changed, 339744 insertions(+), 28699 deletions(-) since Ruby 2.4.0!\n\nEnjoy Ruby 2.5.0-preview1!\n\nhttps://www.ruby-lang.org/en/news/2017/10/10/ruby-2-5-0-preview1-released/",
+         "id": "1900757616805828_1939354236279499",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "https://www.ruby-lang.org/en/news/2017/10/10/ruby-2-5-0-preview1-released/",
+         "created_time": "2017-10-13T15:00:54+0000"
       },
       {
-        "message": "Which is your lucky symbol? 1 or 2?
-
-Play now ⭐ http://bit.ly/GPPoker",
-        "id": "271833512869969_1454096367977005",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "photo",
-        "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/p130x130/22154327_1454095921310383_4907033719408616962_n.jpg?oh=3cca08a7a47440016fdeed3c07f30ea8&oe=5AA8E5DE",
-        "link": "https://www.facebook.com/ruby.programming/photos/a.272991772754143.75135.271833512869969/1454095921310383/?type=3",
-        "created_time": "2017-10-07T19:15:00+0000"
+         "message": "Parse your HTML/XML with nokogiri\n\ngem install nokogiri\n\nReference:\nhttp://www.nokogiri.org/",
+         "id": "1900757616805828_1934278280120428",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "http://www.nokogiri.org/",
+         "created_time": "2017-10-01T04:21:04+0000"
       },
       {
-        "message": "You can tell who's a Libra because they're gentle, kind and always want to keep the peace. Sometimes they find it hard to say 'no' because of it, so be extra nice to them!
-
-If you're a Libra and this sounds like you, LIKE! 🌟 http://bit.ly/GPPoker",
-        "id": "271833512869969_1453403501379625",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "photo",
-        "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/p130x130/22195771_1453403161379659_614807584297940075_n.jpg?oh=69317ad570ff3599c54fd812a5050871&oe=5A78EF87",
-        "link": "https://www.facebook.com/ruby.programming/photos/a.272991772754143.75135.271833512869969/1453403161379659/?type=3",
-        "created_time": "2017-10-03T19:15:00+0000"
+         "message": "Build tools...\n\nmake, rake and ant on a table...\n\nhttp://hyperpolyglot.org/build",
+         "id": "1900757616805828_1933047430243513",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "http://hyperpolyglot.org/build",
+         "created_time": "2017-09-28T03:24:00+0000"
       },
       {
-        "message": "Let's raise our glasses to Oktoberfest at GamePoint! Can you guess which glass is the fullest?
-
-Comment and play! 🍺 http://bit.ly/GPPoker",
-        "id": "271833512869969_1447993415253967",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "photo",
-        "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/p130x130/21765301_1447990765254232_5856555701441891525_n.jpg?oh=8ab86a338da721e1b19773005f50816f&oe=5AAC19CC",
-        "link": "https://www.facebook.com/ruby.programming/photos/a.272991772754143.75135.271833512869969/1447990765254232/?type=3",
-        "created_time": "2017-09-27T15:36:00+0000"
+         "message": "Blog of Aaron Patterson(#tenderlove) on #Ruby\n\nhttp://tenderlovemaking.com/",
+         "id": "1900757616805828_1931762777038645",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "picture": "https://scontent.xx.fbcdn.net/v/t1.0-1/p200x200/19905276_1901074306774159_8899017479450411344_n.jpg?oh=013bc73d3f098411b4c54d78d698910f&oe=5A6689E9",
+         "link": "http://tenderlovemaking.com/",
+         "created_time": "2017-09-24T16:44:05+0000"
       },
       {
-        "message": "Real GamePoint Fans can spot all the differences! Can you?
-
-Tell us and play your favorite game! 🌟 http://bit.ly/GPPoker",
-        "id": "271833512869969_1445399695513339",
-        "from": {
-          "name": "Poker",
-          "id": "271833512869969"
-        },
-        "type": "photo",
-        "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/s130x130/21752281_1445395622180413_3721339054077789210_n.jpg?oh=acb42e6de8779f958df50efb1d65d7a7&oe=5AA97D7A",
-        "link": "https://www.facebook.com/ruby.programming/photos/a.272991772754143.75135.271833512869969/1445395622180413/?type=3",
-        "created_time": "2017-09-23T19:15:00+0000"
+         "message": "A good rake introduction\n\nhttp://jasonseifer.com/2010/04/06/rake-tutorial",
+         "id": "1900757616805828_1929759093905680",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "http://jasonseifer.com/2010/04/06/rake-tutorial",
+         "created_time": "2017-09-19T12:15:55+0000"
+      },
+      {
+         "message": "test-unit is good and straight forward. rspec just add more complexity :)",
+         "id": "1900757616805828_1928676817347241",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "status",
+         "created_time": "2017-09-16T14:45:45+0000"
+      },
+      {
+         "message": "SciRuby - Tools for Scientific Computing in Ruby\n\nhttp://sciruby.com/\n\nsciruby fan page\nhttps://www.facebook.com/SciRuby\n\n-----------------------\n\ngem install sciruby",
+         "id": "1900757616805828_1926202600927996",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "http://sciruby.com/",
+         "created_time": "2017-09-10T09:13:14+0000"
+      },
+      {
+         "message": "Rex and racc\n-------------------------\n\nA Tester Learns Rex and Racc, Part 1\n\nhttp://testerstories.com/2012/06/a-tester-learns-rex-and-racc-part-1/",
+         "id": "1900757616805828_1925575690990687",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "http://testerstories.com/2012/06/a-tester-learns-rex-and-racc-part-1/",
+         "created_time": "2017-09-08T16:53:12+0000"
+      },
+      {
+         "message": "Matrix in ruby:\n----------------------------\n\nrequire 'pp'\nrequire 'matrix'\n\nx=Matrix.rows([[1,2], [3,4]]);\n\nputs \"rank = #{x.rank}\"  #  => 2\n\nputs \"det(X) = #{x.det}\"  # => -2\n\n# inverse a matrix\ny = x.inverse   # => Matrix[[(-2/1), (1/1)], [(3/2), (-1/2)]]",
+         "id": "1900757616805828_1925105017704421",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "status",
+         "created_time": "2017-09-07T10:23:39+0000"
+      },
+      {
+         "message": "Rubyinstaller2 project, build ruby installer for Windows\n\nRelease page:\nhttps://github.com/oneclick/rubyinstaller2/releases",
+         "id": "1900757616805828_1919913138223609",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "picture": "https://external.xx.fbcdn.net/safe_image.php?d=AQCqeJYRsVq5eT2u&w=130&h=130&url=https\u00253A\u00252F\u00252Favatars0.githubusercontent.com\u00252Fu\u00252F54774\u00253Fv\u00253D3\u002526s\u00253D400&cfs=1&_nc_hash=AQCt4huPnDKAzI9M",
+         "link": "https://github.com/oneclick/rubyinstaller2/releases",
+         "created_time": "2017-08-25T02:43:05+0000"
+      },
+      {
+         "message": "Eclipse also support Ruby development. We need to install Ruby DLTK to use...\n\nhttps://codeyarns.com/2015/01/21/how-to-install-dltk-ruby-plugin-in-eclipse/\n\nhttps://marketplace.eclipse.org/content/ruby-dltk",
+         "id": "1900757616805828_1917168445164745",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "picture": "https://external.xx.fbcdn.net/safe_image.php?d=AQCYSPCK3yIKVr4N&w=130&h=130&url=https\u00253A\u00252F\u00252Fcodeyarns.files.wordpress.com\u00252F2015\u00252F01\u00252F20150121-ruby.png&cfs=1&_nc_hash=AQA42mYAqN0stQoa",
+         "link": "https://codeyarns.com/2015/01/21/how-to-install-dltk-ruby-plugin-in-eclipse/",
+         "created_time": "2017-08-18T02:10:29+0000"
+      },
+      {
+         "message": "Learn ruby the hard way!\n\nExercise 47: Automated Testing\n\nhttps://learnrubythehardway.org/book/ex47.html",
+         "id": "1900757616805828_1907741962774060",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "https://learnrubythehardway.org/book/ex47.html",
+         "created_time": "2017-07-26T16:01:58+0000"
+      },
+      {
+         "message": "Practical Graph Theory in Ruby\n\nhttp://www.blackbytes.info/2017/05\n/graph-theory-in-ruby/",
+         "id": "1900757616805828_1906809989533924",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "picture": "https://external.xx.fbcdn.net/safe_image.php?d=AQCZNBg6cgK7YuTH&w=130&h=130&url=http\u00253A\u00252F\u00252Fwww.blackbytes.info\u00252Fwp-content\u00252Fuploads\u00252F2017\u00252F05\u00252Fgraph-theory-1.png&cfs=1&_nc_hash=AQD_VTZ92h1b_7i8",
+         "link": "http://www.blackbytes.info/2017/05/graph-theory-in-ruby/",
+         "created_time": "2017-07-24T16:31:12+0000"
+      },
+      {
+         "message": "New TIOBE index\n\n1) Java \n2) C\n.\n..\n13) Ruby\n\nhttps://www.tiobe.com/tiobe-index/",
+         "id": "1900757616805828_1905412019673721",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "https://www.tiobe.com/tiobe-index/",
+         "created_time": "2017-07-21T16:14:19+0000"
+      },
+      {
+         "message": "Mock title",
+         "id": "1900757616805828_1905411616340428",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "photo",
+         "picture": "https://scontent.xx.fbcdn.net/v/t1.0-0/s130x130/19989605_1905411586340431_1666223920192420909_n.jpg?oh=7f7b9215bc72d4529634c511e7b72478&oe=5AAE23B5",
+         "link": "https://www.facebook.com/ruby.programming/photos/a.1905411609673762.1073741827.1900757616805828/1905411586340431/?type=3",
+         "created_time": "2017-07-21T16:13:01+0000"
+      },
+      {
+         "message": "Ruby Conf 12 - Rapid Programming Language Prototypes with Ruby RACC by Tom Lee \n\nhttps://www.youtube.com/watch?v=goQZps9vt3o",
+         "id": "1900757616805828_1905411126340477",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "video",
+         "picture": "https://external.xx.fbcdn.net/safe_image.php?d=AQAmlRfSTRaazy1J&w=130&h=130&url=https\u00253A\u00252F\u00252Fi.ytimg.com\u00252Fvi\u00252FgoQZps9vt3o\u00252Fmaxresdefault.jpg&cfs=1&sx=0&sy=0&sw=1080&sh=1080&_nc_hash=AQAlxT_beKHwm8re",
+         "link": "https://www.youtube.com/watch?v=goQZps9vt3o",
+         "created_time": "2017-07-21T16:11:17+0000"
+      },
+      {
+         "message": "A Tester Learns Rex and Racc, Part 1\n\nhttp://testerstories.com/2012/06/a-tester-learns-rex-and-racc-part-1/",
+         "id": "1900757616805828_1904257223122534",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "http://testerstories.com/2012/06/a-tester-learns-rex-and-racc-part-1/",
+         "created_time": "2017-07-19T07:26:12+0000"
+      },
+      {
+         "message": "Racc is an LALR(1) parser generator. It is written in Ruby itself, and generates ruby programs. \n\n> gem install racc\n\nhttps://github.com/tenderlove/racc",
+         "id": "1900757616805828_1903736456507944",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "picture": "https://external.xx.fbcdn.net/safe_image.php?d=AQDwbuF7VxOnsBFI&w=130&h=130&url=https\u00253A\u00252F\u00252Favatars2.githubusercontent.com\u00252Fu\u00252F3124\u00253Fv\u00253D4\u002526s\u00253D400&cfs=1&_nc_hash=AQBiW1aMAW9Hw4Gv",
+         "link": "https://github.com/tenderlove/racc",
+         "created_time": "2017-07-18T05:47:12+0000"
+      },
+      {
+         "message": "Ruby 2.4 new features\n\nhttps://blog.cognitohq.com/new-features-in-ruby-2-4/",
+         "id": "1900757616805828_1903424363205820",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "link": "https://blog.cognitohq.com/new-features-in-ruby-2-4/",
+         "created_time": "2017-07-17T14:47:55+0000"
+      },
+      {
+         "message": "Parsing Expressions for Ruby with citrus\n\ngem install citrus\n\nhttps://github.com/mjackson/citrus",
+         "id": "1900757616805828_1903421156539474",
+         "from": {
+            "name": "Ruby Programming Language",
+            "id": "1900757616805828"
+         },
+         "type": "link",
+         "picture": "https://external.xx.fbcdn.net/safe_image.php?d=AQBNxlfb7jZAtlhC&w=130&h=130&url=https\u00253A\u00252F\u00252Favatars3.githubusercontent.com\u00252Fu\u00252F92839\u00253Fv\u00253D3\u002526s\u00253D400&cfs=1&sx=0&sy=0&sw=400&sh=400&_nc_hash=AQCSaW-696nv_VF8",
+         "link": "https://github.com/mjackson/citrus",
+         "created_time": "2017-07-17T14:42:59+0000"
       }
-    ],
-    "paging": {
+   ],
+   "paging": {
       "cursors": {
-        "before": "Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5TXlOekU0TXpNMU1USTROams1TmprNk5qYzNPVEkxTXprek9UQXhNekl4TVRBNU5BOE1ZAWEJwWDNOMGIzSjVYMmxrRHlBeU56RTRNek0xTVRJNE5qazVOamxmTVRRM09UazFOREF4T0RjeU5EVTNNdzhFZAEdsdFpRWlorSytXQVE9PQZDZD",
-        "after": "Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5TXlOekU0TXpNMU1USTROams1TmprNk5ESTJPVGM1TWpVMU1USTFORE14TWpReU5BOE1ZAWEJwWDNOMGIzSjVYMmxrRHlBeU56RTRNek0xTVRJNE5qazVOamxmTVRRME5UTTVPVFk1TlRVeE16TXpPUThFZAEdsdFpRWlp4ckswQVE9PQZDZD"
+         "before": "Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5VXhPVEF3TnpVM05qRTJPREExT0RJNE9pMDJNVGcyTVRnek9UZAzFPREk1TWpNMk5UY3hEd3hoY0dsZAmMzUnZAjbmxmYVdRUElURTVNREEzTlRjMk1UWTRNRFU0TWpoZAk1UazBOemd6T0RBeE9EYzJORFExTkE4RWRHbHRaUVpaKzhXMkFRPT0ZD",
+         "after": "Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5UXhPVEF3TnpVM05qRTJPREExT0RJNE9qSXdNemN6TkRZANE1UazRPVE01TWpFeU1UUVBER0ZA3YVY5emRHOXllVjlwWkE4aE1Ua3dNRGMxTnpZAeE5qZA3dOVGd5T0Y4eE9UQXpOREl4TVRVMk5UTTVORGMwRHdSMGFXMWxCbGxzelBNQgZDZD"
       },
-      "next": "https://graph.facebook.com/v2.10/271833512869969/posts?access_token=EAAGguqSD6aIBAB6VyHTp0jU52xbhIcaXthjxnNzLZB7FZCZBouCzqBOTcmAVzirxNy98Nihbmt6HEn8ZCBNnvA8fOojHvxUOAmGBZAjedirL4AplwE49GKjYSFM56rpavKrTuu5MduHCBziY6PAwBToBvEXAvk3T1ejsRH9mThRJPyk4ZBwIjUYrU2UbS902oZD&pretty=0&fields=message%2C+id%2C+from%2C+type%2C+picture%2C+link%2C+created_time&limit=10&after=Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5TXlOekU0TXpNMU1USTROams1TmprNk5ESTJPVGM1TWpVMU1USTFORE14TWpReU5BOE1ZAWEJwWDNOMGIzSjVYMmxrRHlBeU56RTRNek0xTVRJNE5qazVOamxmTVRRME5UTTVPVFk1TlRVeE16TXpPUThFZAEdsdFpRWlp4ckswQVE9PQZDZD"
-    }
-  },
-  "id": "271833512869969"
+      "next": "https://graph.facebook.com/v2.9/1900757616805828/posts?access_token=458198461180322\u00257CC3BZPdHBlAiERARW14Vuyiujw4o&pretty=1&fields=message\u00252Cid\u00252Cfrom\u00252Ctype\u00252Cpicture\u00252Clink\u00252Ccreated_time&limit=25&after=Q2c4U1pXNTBYM0YxWlhKNVgzTjBiM0o1WDJsa0R5UXhPVEF3TnpVM05qRTJPREExT0RJNE9qSXdNemN6TkRZANE1UazRPVE01TWpFeU1UUVBER0ZA3YVY5emRHOXllVjlwWkE4aE1Ua3dNRGMxTnpZAeE5qZA3dOVGd5T0Y4eE9UQXpOREl4TVRVMk5UTTVORGMwRHdSMGFXMWxCbGxzelBNQgZDZD"
+   }
 }

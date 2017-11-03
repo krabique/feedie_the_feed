@@ -17,9 +17,9 @@ RSpec.configure do |config|
                     'client_secret' => '123',
                     'grant_type' => 'client_credentials' })
       .to_rack(FakeFacebook)
-    stub_request(:get, /rss_test_sample/).to_rack(FakeRSS)
-    stub_request(:get, %r{graph.facebook.com/ruby.programming/})
-      .to_return(status: 200)
+    stub_request(:get, /rss/).to_rack(FakeRSS)
+    stub_request(:get, /ruby\.programming/)
+      .to_rack(FakeFacebook)
     stub_request(:get, /google.com/).to_return(status: 200)
     stub_request(:get, %r{graph.facebook.com/not_existing_page})
       .to_rack(FakeFacebook)
