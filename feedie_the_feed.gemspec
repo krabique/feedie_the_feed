@@ -17,6 +17,10 @@ Gem::Specification.new do |s|
   s.files = Dir.glob('lib/**/*') + %w[LICENSE README.md]
   s.require_path = 'lib'
 
+  s.metadata = {
+    'changelog_uri' => 'https://example.com/user/bestgemever/CHANGELOG.md'
+  }
+
   s.add_dependency 'feedjira',      '~> 2.1'
   s.add_dependency 'koala',         '~> 3.0'
   s.add_dependency 'nesty',         '~> 1.0'
