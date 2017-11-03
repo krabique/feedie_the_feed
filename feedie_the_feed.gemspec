@@ -18,7 +18,7 @@ Gem::Specification.new do |s|
   s.require_path = 'lib'
 
   s.metadata = {
-    'changelog_uri' => 'https://example.com/user/bestgemever/CHANGELOG.md'
+    'changelog_uri' => 'https://github.com/krabique48/feedie_the_feed/blob/master/Changelog.md'
   }
 
   s.add_dependency 'feedjira',      '~> 2.1'
