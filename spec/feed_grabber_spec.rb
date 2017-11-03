@@ -57,8 +57,8 @@ describe FeedieTheFeed::FeedGrabber do
         'have already been ' \
         'provided on class instance creation' do
         @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-          facebook_appid: '123',
-          facebook_secret: '123'
+          facebook_appid: 'bad_appid',
+          facebook_secret: 'bad_secret'
         )
         f = @feed_grabber.get(
           facebook_page,
@@ -199,8 +199,8 @@ describe FeedieTheFeed::FeedGrabber do
       'when trying to use the get instance method of FeedGrabber class with ' \
       'wrong Facebook AppID and Facebook secret key' do
       @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-        facebook_appid: '123',
-        facebook_secret: '123'
+        facebook_appid: 'bad_appid',
+        facebook_secret: 'bad_secret'
       )
       expect do
         @feed_grabber.get('https://www.facebook.com/ruby.programming')
@@ -209,8 +209,8 @@ describe FeedieTheFeed::FeedGrabber do
       @feed_grabber = FeedieTheFeed::FeedGrabber.new
       expect do
         @feed_grabber.get('https://www.facebook.com/ruby.programming',
-                          facebook_appid: '123',
-                          facebook_secret: '123')
+                          facebook_appid: 'bad_appid',
+                          facebook_secret: 'bad_secret')
       end.to raise_error(FeedieTheFeed::FacebookAuthorisationError)
     end
 
