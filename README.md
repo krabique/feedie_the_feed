@@ -27,6 +27,8 @@ and you're good to go! Although it may contain a slightly older version, so you 
 
 ```
 git clone git@github.com:krabique48/feedie_the_feed.git
+cd feedie_the_feed
+bundle install
 ```
 
 ### Running the tests
@@ -34,7 +36,7 @@ git clone git@github.com:krabique48/feedie_the_feed.git
 Just run rake and watch it go green for RSpec and RuboCop!
 
 ```
-rake
+bundle exec rake
 ```
 
 ### Documentation
