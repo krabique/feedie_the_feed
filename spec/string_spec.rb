@@ -2,6 +2,9 @@ require 'simplecov'
 
 require 'feedie_the_feed'
 
+require 'support/string_helper'
+include StringHelper
+
 # rubocop:disable Metrics/BlockLength
 describe String do
   context 'When testing the String class' do
@@ -10,20 +13,6 @@ describe String do
       "just on a space (if possible), or return the string if it's length" \
       'already lower than required, when we call the truncate(truncate_at)' \
       'method' do
-
-      # This method is used to validate the behaviour of the truncate method
-      def validates?(initial_string, truncate_at, changed_string)
-        return true if initial_string.length <= truncate_at ||
-                       # https://github.com/rails/rails/issues/30600
-                       truncate_at == 1 || truncate_at == 2
-
-        if changed_string.length <= truncate_at &&
-           changed_string =~ /.*\.\.\.\z/
-          true
-        else
-          false
-        end
-      end
 
       # https://stackoverflow.com/a/88341/5861424
       # Generate random string
