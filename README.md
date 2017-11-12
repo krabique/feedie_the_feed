@@ -200,6 +200,10 @@ With RSS, the only two keys that would be there no matter what are `entry_id` an
 
 `reset_fb_posts_limit!` is used to reset the object's Facebook posts limit.
 
+## License
+
+MIT
+
 ## Authors
 
 * **Oleg Larkin** - *Initial work* - [krabique48](https://github.com/krabique48) (krabique48@gmail.com)
