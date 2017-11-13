@@ -5,16 +5,18 @@ describe FeedieTheFeed do
     facebook_secret = ENV['FACEBOOK_SECRET']
 
     it 'should return feed when we call the get class method' do
-      FeedieTheFeed.get(facebook_page)
+      f = FeedieTheFeed.get(facebook_page)
+      expect(f).to be_truthy
     end
 
     it 'should return feed when we call the get class method with ' \
       'Facebook AppID and secret key provided in the call' do
-      FeedieTheFeed.get(
+      f = FeedieTheFeed.get(
         facebook_page,
         facebook_appid: facebook_appid,
         facebook_secret: facebook_secret
       )
+      expect(f).to be_truthy
     end
   end
 end
