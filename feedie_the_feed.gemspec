@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'nesty',         '~> 1.0'
   s.add_dependency 'public_suffix', '~> 3.0'
 
+  s.add_development_dependency 'benchmark-memory', '~> 0.1'
   s.add_development_dependency 'rake', '~> 12.2'
   s.add_development_dependency 'rspec', '~> 3.7'
   s.add_development_dependency 'rubocop', '~> 0.51'
