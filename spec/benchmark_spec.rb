@@ -14,22 +14,30 @@ describe FeedieTheFeed::FeedGrabber do
       
       require 'benchmark'
       require "benchmark/memory"
-      iterations = 100
+      @iterations = 100
+      
+      def many_objects(facebook_page, facebook_appid, facebook_secret)
+        feed_grabber = FeedieTheFeed::FeedGrabber.new(
+          url: facebook_page,
+          facebook_appid: facebook_appid,
+          facebook_secret: facebook_secret
+        )
+        
+        feed_grabber.get
+      end
+      
+      Benchmark.bm do |bm|
+        bm.report do
+          @iterations.times do
+            many_objects(facebook_page, facebook_appid, facebook_secret)
+          end
+        end
+      end
       
       Benchmark.memory do |x|
         x.report("many objects") { 
-          Benchmark.bm do |bm|
-            bm.report do
-              iterations.times do
-                @feed_grabber = FeedieTheFeed::FeedGrabber.new(
-                  url: facebook_page,
-                  facebook_appid: facebook_appid,
-                  facebook_secret: facebook_secret
-                )
-                
-                f = @feed_grabber.get
-              end
-            end
+          @iterations.times do
+            many_objects(facebook_page, facebook_appid, facebook_secret)
           end
         }
       end
