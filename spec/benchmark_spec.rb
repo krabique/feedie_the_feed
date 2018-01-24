@@ -2,7 +2,6 @@ require 'feedie_the_feed'
 
 require 'spec_helper'
 
-
 # rubocop:disable Metrics/BlockLength
 describe FeedieTheFeed::FeedGrabber do
   context 'with Facebook pages' do
@@ -14,7 +13,7 @@ describe FeedieTheFeed::FeedGrabber do
       @feed_grabber = FeedieTheFeed::FeedGrabber.new
       
       require 'benchmark'
-      iterations = 1000
+      iterations = 100_000
 
       Benchmark.bm do |bm|
         bm.report do
@@ -26,11 +25,18 @@ describe FeedieTheFeed::FeedGrabber do
             )
           end
         end
+        
+        bm.report do
+          iterations.times do
+            @feed_grabber = FeedieTheFeed::FeedGrabber.new(
+              facebook_appid: facebook_appid,
+              facebook_secret: facebook_secret
+            )
+            
+            f = @feed_grabber.get(facebook_page)
+          end
+        end
       end
-      
-      # include RSpec::Benchmark::Matchers
-      
-      # expect(f).to be_truthy
     end
     
   end
