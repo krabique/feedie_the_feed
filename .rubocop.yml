@@ -1,0 +1,8 @@
+AllCops:
+  TargetRubyVersion: 2.2
+  Exclude:
+    - 'test.rb'
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/feed_grabber_spec.rb'
+    - 'spec/string_spec.rb'
