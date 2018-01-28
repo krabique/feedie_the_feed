@@ -1,4 +1,9 @@
-[![Build Status](https://travis-ci.org/krabique/feedie_the_feed.svg?branch=master)](https://travis-ci.org/krabique/feedie_the_feed) [![Gem Version](https://badge.fury.io/rb/feedie_the_feed.svg)](https://badge.fury.io/rb/feedie_the_feed) [![Dependency Status](https://gemnasium.com/badges/github.com/krabique48/feedie_the_feed.svg)](https://gemnasium.com/github.com/krabique48/feedie_the_feed) [![Maintainability](https://api.codeclimate.com/v1/badges/2b6e9817b3a7664751a5/maintainability)](https://codeclimate.com/github/krabique48/feedie_the_feed/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/2b6e9817b3a7664751a5/test_coverage)](https://codeclimate.com/github/krabique48/feedie_the_feed/test_coverage) 
+[![Build Status](https://travis-ci.org/krabique/feedie_the_feed.svg?branch=master)](https://travis-ci.org/krabique/feedie_the_feed) 
+[![Gem Version](https://badge.fury.io/rb/feedie_the_feed.svg)](https://badge.fury.io/rb/feedie_the_feed) 
+[![Dependency Status](https://gemnasium.com/badges/github.com/krabique48/feedie_the_feed.svg)](https://gemnasium.com/github.com/krabique48/feedie_the_feed) 
+[![Maintainability](https://api.codeclimate.com/v1/badges/b5b5af83cd7b6d5ad6db/maintainability)](https://codeclimate.com/github/krabique/feedie_the_feed/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/b5b5af83cd7b6d5ad6db/test_coverage)](https://codeclimate.com/github/krabique/feedie_the_feed/test_coverage)
+[![Inline docs](http://inch-ci.org/github/krabique/feedie_the_feed.svg?branch=master)](http://inch-ci.org/github/krabique/feedie_the_feed)
 
 # Feedie The Feed
 
