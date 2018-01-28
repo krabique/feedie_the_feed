@@ -2,7 +2,6 @@ require 'simplecov'
 
 require 'feedie_the_feed'
 
-# rubocop:disable Metrics/BlockLength
 describe String do
   context 'When testing the String class' do
     it "should truncate the string to the given length and add '...' " \

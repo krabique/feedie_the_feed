@@ -4,7 +4,6 @@ require 'feedie_the_feed'
 
 require 'spec_helper'
 
-# rubocop:disable Metrics/BlockLength
 describe FeedieTheFeed::FeedGrabber do
   context 'When testing the FeedGrabber class' do
     it 'should set @facebook_posts_limit_global to the given limit ' \
